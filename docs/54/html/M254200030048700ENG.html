@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/54/html/M254200030048700ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>SYSTEM OPERATION</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>SYSTEM OPERATION</h1><br><hr width="90%"><a name=""></a><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/AC206267AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/AC206267AB00ENG.png"></a><br>The CAN communication system is described below.<br><b></b><br><ul>
+<li>Each ECU communicating with CAN periodically sends several
+sensors&#8217; information on CAN bus as data frame (called periodical sending data). For
+further details, consult the data frame section<a href="#A4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></li>
+<li>ECUs requiring data on CAN bus can receive data frames sent from each ECU simultaneously.<br></li>
+<li>The data sent from each ECU conducting CAN communication is transmitted at 0.01 &#0045; 1
+sec interval depending on necessity of data.<br><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">In the figure above, the data frame A is transmitted in "a" intervals, while the data
+frames B and C are transmitted at intervals "b" and "c," respectively.<br></td>
+</tr>
+</table>
+</li>
+<li>A single ECU transmits multiple data frames.<br></li>
+<li>When data frames conflict with one another (when plural ECUs transmit signals simultaneously),
+data is prioritised for transmission by mediation, therefore, plural data frames are not sent
+simultaneously. For further details, consult the mediation section<a href="#A2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></li>
+<li>Data is transmitted not by the conventional voltage-using method but by voltage
+potential difference. For further details, consult the section on CAN bus voltage transformation
+<a href="#A3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></li>
+<li>Reliability of each ECU transmitting signals via CAN communication is secured by
+several error detection and recovery processes. For further details, consult the sections on
+error detection and system recovery<a href="#A5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></li>
+<li>For major communication signals (transmitting signals) among ECUs.<br></li>
+</ul>
+<hr width="90%"><a name=""></a><a name="A2"></a><hr width="70%">
+<h3>MEDIATION</h3><br>Because each ECU transmits data independently on the CAN bus, there are cases of data
+collision when multiple data frames that ECUs attempt to transmit simultaneously (if multiple
+ECUs transmit at nearly the same moment). At this moment, processing of the ECUs attempting
+transmission is performed in the following way.<br><b></b><br><ol>
+<li>Data frame with high priority is transmitted first according
+to ID codes memorized in data frames.<br></li>
+<li>Transmission of low-priority data (data frames) is suspended by the issuing ECUs
+until the bus clears (when no transmission data exists on the CAN bus).<br><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">If the suspended state continues for a specific time, new data (data frame content) is created
+and sent.<br></td>
+</tr>
+</table>
+</li>
+<li>ECU containing suspended data frames transmits the data when the bus becomes available.<br></li>
+</ol>
+<table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">There is enough capacity on the CAN bus, which never prevents data frames from being sent.<br></td>
+</tr>
+</table><a name="A3"></a><hr width="70%">
+<h3>VOLTAGE TRANSFORMATION ON THE CAN BUS</h3><br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/AC204753AD00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/AC204753AD00ENG.png"></a><br>Data frame transmission through the CAN bus line involves voltage transformation (for
+output signals) in the distinctive CAN profile as follows. The ECU transmitting through the
+CAN&#0095;H and CAN&#0095;L bus lines sends 2.5 &#0045; 3.5 V signals to the CAN&#0095;H
+side and 2.5 &#0045; 1.5 V signals to the CAN&#0095;L side. The receiving ECU reads the
+data from the CAN&#0095;H and CAN&#0095;L potential difference. "Recessive" refers to
+the state where both CAN&#0095;H and CAN&#0095;L are under the 2.5 V state, and "Dominant"
+refers to the state where CAN&#0095;H is under the 3.5 V state and CAN&#0095;L is under the
+1.5 V state. By transformation mainly to 2.5 V, even in cases when voltage is rendered 0 from
+faulty earthing or the like (causing a problem of an approximate 0.5 voltage increase on the communications
+line), communication can be continued uninterrupted. Employing dual communications lines improves
+reliability to prevent the presence of noise, compared to the conventional communication method.<br><a name="A4"></a><hr width="70%">
+<h3>DATA FRAMES</h3><br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/AC404606AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/AC404606AB00ENG.png"></a><br>The data frame, which is sent from each ECU (or sensor) to the CAN bus line, consists
+of the fields bellow.<br><b>SOF (Start of Frame)</b><br><ul>
+<li>Indicates the start of the frame<br></li>
+</ul><b>ID (Identifier) region</b><br><ul>
+<li>Identifies the data content while specifying priority rank in case of mediation<br></li>
+</ul><b>Control region</b><br><ul>
+<li>Specifies the frame type, data length, etc.<br></li>
+</ul><b>Data region</b><br><ul>
+<li>Values used for data control, etc.<br></li>
+</ul><b>CRC (Cyclic Redundancy Check) region</b><br><ul>
+<li>Region where to check for errors in sent data. The transmitting ECU calculates data
+regions by applying prescribed operations and stores the results. The receiving ECU detects
+erroneous communication by comparing the CRC region with the data region.<br></li>
+</ul><b>ACK (Acknowledge) region</b><br><ul>
+<li>Region where to conform the reception of sent data<br></li>
+</ul><b>EOF (End of Frame)</b><br><ul>
+<li>Indicates the end of the frame<br></li>
+</ul><a name="A5"></a><hr width="70%">
+<h3>ERROR DETECTION AND RECOVERY</h3><br>CAN protocol secures its reliability of communication by providing several error detection
+function such as CRC shown in data frame, and the recovery function (recovery is performed by
+resending, from abnormal state such as transmission errors). If an error is detected but it
+is not resolved even after recovery, communication is stopped. This state is called "Bus Off."<br><center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/54/html/M254200030048700ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:52 GMT -->
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/35/html/M135900050001100ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>DATA LIST REFERENCE TABLE</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>DATA LIST REFERENCE TABLE</h1><br><hr width="90%"><a name=""></a>The following items can be read by the M.U.T.-III from the FCM-ECU input data.<br><a name=""></a><hr width="70%">
+<table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Item No.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Check item<br></b></td>
+<td valign="top" colspan="2" rowspan="NaN"><b>Check condition<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Normal condition<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ECU power supply voltage<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Battery voltage<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RADAR temperature<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Internal temperature in the ECU (&#0045;40~&#0043;85 &#0176;C) is displayed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">3<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Number of target<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The number of the objects, which the radar recognises in front, is displayed.<br><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">"15" is displayed even when the radar recognises more than 15 objects.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">4<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Target vehicle existence<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">A target vehicle is NOT in front of your vehicle.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not exist<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">A target vehicle is in front of your vehicle.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Exist<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">5<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Relative speed (Target vehicle)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON" and engine is running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The relative speed against the vehicle (object), which the ECU recognises, is displayed in km&#0047;h.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">6<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Relative distance (Target vehi.)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON" and engine is running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The relative distance against the vehicle (object), which the ECU recognises, is displayed in m.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">7<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Lateral offset (Target vehicle)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON" and engine is running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-2 to 2 m<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">8<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Curve radius<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON" and engine is running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Nearly "0" is displayed when the vehicle is stationary.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">9<br></td>
+<td valign="top" colspan="NaN" rowspan="2">RADAR emission status<br></td>
+<td valign="top" colspan="NaN" rowspan="2"><b></b><br><ul>
+<li>Perform a test run of the vehicle.<br></li>
+<li>Cruise control: active<br></li>
+</ul><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The system suppresses the radar emission.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Reduction<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Normal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Normal<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="3">10<br></td>
+<td valign="top" colspan="NaN" rowspan="3">RADAR performance<br></td>
+<td valign="top" colspan="NaN" rowspan="3"><b></b><br><ul>
+<li>Perform a test run of the vehicle.<br></li>
+<li>Cruise control: active<br></li>
+</ul><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The radar works normally.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Normal<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The radar tests its own detection performance.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Under self test<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The detection performance is deteriorated due to a contaminated radar.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RADAR Blocked<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">11<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Lateral acceleration<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Vehicle stopped (level)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-1.28 to &#0043;1.27 m&#0047;s<sup>2</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-1.28 to &#0043;1.27 m&#0047;s<sup>2</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">12<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Longitudinal acceleration<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Vehicle stopped (level)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-1.28 to &#0043;1.27 m&#0047;s<sup>2</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-1.28 to &#0043;1.27 m&#0047;s<sup>2</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">13<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vehicle speed<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Perform a test run of the vehicle.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vehicle speed is displayed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">14<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine revolution<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Perform a test run of the vehicle.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine speed is displayed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="3">16<br></td>
+<td valign="top" colspan="NaN" rowspan="3">A.S.C. status<br></td>
+<td valign="top" colspan="NaN" rowspan="3">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ASC: ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON, S-AWC ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">ASC: OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF, S-AWC ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">ASC: Fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Fail<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">17<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "OFF"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">18<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC switch state<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">19<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC distance switch state<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">20<br></td>
+<td valign="top" colspan="NaN" rowspan="2">FCM switch state<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Forward collision mitigation system (FCM) and Ultrasonic misacceleration Mitigation System ON&#0047;OFF switch: Pressed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Forward collision mitigation system (FCM) and Ultrasonic misacceleration Mitigation System ON&#0047;OFF switch: Released<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">21<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Vehicle control state (ENG ECU)<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The cruise control: OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ALL OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The cruise control: ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Cruise ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">22<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC control state (ENG ECU)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">23<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC fail state (ENG ECU)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">24<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Transmission fail<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The transmission is normal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Normal<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The transmission fails<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Limp home ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="4">25<br></td>
+<td valign="top" colspan="NaN" rowspan="4">Steering angle sensor state<br></td>
+<td valign="top" colspan="NaN" rowspan="4">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The steering angle sensor is normal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OK<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The steering angle sensor is NOT initialised.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not initialised<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The steering angle sensor fails.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Fault<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The steering angle sensor fails and is not initialised.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Fault &#0038; Not ini.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">26<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC control state (A.S.C. ECU)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">27<br></td>
+<td valign="top" colspan="NaN" rowspan="2">ACC fail state (A.S.C. ECU)<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Normal<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The ASTC-ECU detects a malfunction related to the FCM.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Fail with DTC<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">28<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TEMP fail ODO(ENG 1st latest)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance (km)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">29<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TEMP fail ODO(ENG 2nd latest)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance (km)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">30<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TEMP fail ODO(ENG 3rd latest)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance (km)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">31<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TEMP fail ODO(A.S.C. 1st latest)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance (km)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">32<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TEMP fail ODO(A.S.C. 2nd latest)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance (km)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">33<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TEMP fail ODO(A.S.C. 3rd latest)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance (km)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">34<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FL wheel speed<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+<td valign="top" colspan="NaN" rowspan="4">The speedometer display and the M.U.T.-III display almost agree with each other. (r&#0047;min)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">35<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FR wheel speed<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">36<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RL wheel speed<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">37<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RR wheel speed<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">38<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC:Target acceleration (MAX)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">39<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC:Target acceleration (MIN)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">40<br></td>
+<td valign="top" colspan="NaN" rowspan="2">FCM:Target deceleration<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system requests the automatic braking or brake assist.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;10.24 to &#0043;10.22 (m&#0047;s<sup>2</sup>)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system does not request the automatic braking or brake assist.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Other than the above<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">41<br></td>
+<td valign="top" colspan="NaN" rowspan="2">FCM:Brake prefill request<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system does not request the pre-fill braking.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system requests the pre-fill braking.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">42<br></td>
+<td valign="top" colspan="NaN" rowspan="2">FCM:Brake assist request<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system does not request the brake assist.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system requests the brake assist.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">43<br></td>
+<td valign="top" colspan="NaN" rowspan="2">FCM:Auto brake request<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system does not request the automatic braking.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system requests the automatic braking.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">44<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC display req. (Forward vehi.)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">45<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC display req. (Set distance)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">46<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC display req. (Indicator)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">47<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC display req. (Set speed)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">48<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC warning request<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="14">49<br></td>
+<td valign="top" colspan="NaN" rowspan="14">FCM warning request<br></td>
+<td valign="top" colspan="NaN" rowspan="14">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system is not displayed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No request<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (warning is activated)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Warning<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (during braking or brake assist)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM brake<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (after braking or brake assist)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM BRK finished<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (The FCM system is switched off)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (The distance is set to "FAR")<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Distance (Far)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (The distance is set to "NEAR")<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Distance (Near)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (The distance is set to "MIDDLE")<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Distance (Mid)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (FCM ON&#0047;OFF switch is pushed during HDC active)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Disable(HDC)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (FCM ON&#0047;OFF switch is pushed during R&#0047;D Lock state)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Disable(R&#0047;DLock)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (FCM ON&#0047;OFF switch is pushed during 4LLc state)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Disable(4LLc)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system is displayed (The FCM system is deactivated because of adherence of snow or dirt and so on in front of radar sensor)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RADAR Blocked<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (The FCM system is deactivated temporarily)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RADAR failure<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system warning is displayed (The system fails)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">System failure<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">50<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC display req.(Set speed unit)<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="3">51<br></td>
+<td valign="top" colspan="NaN" rowspan="3">FCM display req. (OFF indicator)<br></td>
+<td valign="top" colspan="NaN" rowspan="3">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system: OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM system: ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The FCM radar calibration has not been completed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">52<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC&#0047;FCM buzzer request<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">53<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vertical alignment (Current)<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Angles which indicate radar mounting angle correction value<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;2 to &#0043;2 deg<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">54<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Horizontal alignment (Current)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;2 to &#0043;2 deg<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">55<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vertical alignment (Measured)<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Angles which indicate radar mounting angle correction value<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;10 to &#0043;10 deg<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">56<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Horizontal alignment (Measured)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;10 to &#0043;10 deg<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">62<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Alignment complete flag<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Ignition switch: "ON"<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Radar alignment(aiming) is not completed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Radar alignment(aiming) is completed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>Items monitored by the FCM-ECU</h3><br>By using these monitor items, the system recognises how the FCM is controlled via the FCM-ECU.<br><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Item No.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Inspection item<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">100<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Data reliability<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">101<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Intervention counter<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">102<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Odometer<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">103<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Vehicle speed (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">104<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Vehicle speed (End)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">105<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Deceleration (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">106<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:ACC system status<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">107<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:MAX target decele.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">108<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:MAX deceleration<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">109<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Steering angle (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">110<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Steering angle (End)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">111<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Accelerator pedal (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">112<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Accelerator pedal(End)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">113<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Brake switch (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">114<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Brake switch (End)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">115<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Brake M&#0047;C pressure(ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">116<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Brake M&#0047;C PRS. (End)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">117<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Obstacle status<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">118<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Relative distance (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">119<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Relative distance(End)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">120<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Relative speed (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">121<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Relative speed (End)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">122<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Lateral offset (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">123<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Lateral offset (End)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">124<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Curve radius (ST)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">125<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM Event:Auto brake time<br></td>
+</tr>
+</table>
+<center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/35/html/M135900050001100ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:10 GMT -->
+</html>

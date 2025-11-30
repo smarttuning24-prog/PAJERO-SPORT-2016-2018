@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/42/html/M242100010074800ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>GENERAL INFORMATION</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>GENERAL INFORMATION</h1><br><hr width="90%"><a name=""></a>The keyless operation system (KOS) has the following features:<br><b></b><br><ul>
+<li>This system enables the driver to unlock all the doors (including the tailgate) by operating the lock&#0047;unlock switch in the front door outside handles or operating the tailgate lock release handle (tailgate open switch, tailgate lock switch), without taking the keyless operation key out of his&#0047;her pocket or bag when he&#0047;she is carrying a keyless operation key which has been registered in the KOS&#0038;OSS-ECU. This function is called "Door entry function".<br></li>
+<li>This system enables the driver to carry out remote operation (locking&#0047;unlocking of all doors and tailgate) and multi-mode operation (folding&#0047;unfolding of door mirrors) by operating the lock&#0047;unlock switch in the keyless operation key. This function is called "Keyless entry function".<br></li>
+<li>This one-touch start system (OSS) enables the driver to start the engine by operating the engine switch instead of a conventional mechanical key.<br></li>
+<li>This system features an immobilizer function which prohibits the engine start by using an unauthorised key.<br></li>
+<li>Each vehicle is provided with two keyless operation keys, and up to four keyless operation keys can be registered in the ECU.<br></li>
+<li>The keyless operation key also incorporates an indicator lamp that enables the driver to check if the signal is transmitted correctly or if the battery in the key is discharged (Refer to <a href="javascript:JumpPage('M242100040062000ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>The keyless operation key incorporates an emergency key to lock&#0047;unlock the doors in case the battery in the keyless operation key is discharged or the keyless operation system is not working normally.<br></li>
+<li>The driver can start the engine by inserting the keyless operation key into the key slot in case the battery in the keyless operation key is discharged or the interior antenna fails (Refer to <a href="javascript:JumpPage('M242100120011300ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">If the immobilizer related system failure occurs, the engine may not start.<br></td>
+</tr>
+</table>
+</li>
+<li>The system shuts down the ACC power supply when 30 or 60 minutes has elapsed with the power supply mode in the ACC position. This prevents the battery from being discharged.<br></li>
+<li>The driver can customise the KOS and ACC power supply cut functions (Refer to <a href="javascript:JumpPage('M242100030063400ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+</ul>
+<hr width="90%"><a name=""></a><a name=""></a><hr width="70%">
+<h3>CONSTRUCTION DIAGRAM</h3><br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/42/ACF01726AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/42/ACF01726AB00ENG.png"></a><br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/42/ACE01914AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/42/ACE01914AB00ENG.png"></a><br><a name=""></a><hr width="70%"><br><b><b>Main components and functions</b></b><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="2" rowspan="NaN"><b>Parts name<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Functional description<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">KOS&#0038;OSS-ECU<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Controls the KOS and the OSS by using the following inputs&#0047;outputs and communications.<br><b></b><br><ul>
+<li>Input of front door lock&#0047;unlock switch, input of tailgate lock release handle, and input of tailgate lock switch<br></li>
+<li>Communications with ETACS-ECU and combination meter via CAN<br></li>
+<li>Wireless communication of keyless operation key via the interior and exterior transmitter antennas as well as via the key slot integrated antenna<br></li>
+<li>Output to the outer buzzer<br></li>
+<li>Output of actuator driving permission signal to electric steering lock<br></li>
+<li>Controls the power supply according to the inputs sent by the engine switch, the stop lamp switch and the P detection switch.<br></li>
+<li>Sends power supply permission signal to the electric steering lock unit.<br></li>
+<li>Communicates with the electric steering lock via LIN to lock&#0047;unlock the doors and diagnose the system.<br></li>
+<li>Switches the vehicle power supply relay.<br></li>
+<li>Communicates with the engine-ECU via CAN to judge whether the engine can be started.<br></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Electric steering lock (incorporates electric steering lock unit)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The keyless operation system allows the steering wheel to be locked&#0047;unlocked electrically. Communicates with the KOS&#0038;OSS-ECU via LIN for user authentication and uses power supply permission signal and an actuator permission signal via wires to lock and unlock the steering wheel.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Keyless operation key (incorporates emergency key)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>The keyless operation key receives signals sent from each interior&#0047;exterior transmitter antenna, certifies the key ID code, calculates the encrypted code, and sends the reply data signal to KOS&#0038;OSS-ECU. If the integrated battery is discharged, the keyless operation key receives signals sent from the key slot when it is inserted in the key slot. Then, it certifies the key ID code, calculates the encrypted code, and sends the reply data signal to KOS&#0038;OSS-ECU via the key slot. Also, when the lock&#0047;unlock switch on the keyless operation key is pressed, the corresponding signal is sent to KOS&#0038;OSS-ECU.<br></li>
+<li>If two or more keyless operation keys registered in KOS&#0038;OSS-ECU respond at the same time, their signals would interfere. To avoid this interference, each signal from KOS&#0038;OSS-ECU is given the priority<sup>&#0042;</sup> data, and the keyless operation keys respond in accordance with this priority.<br></li>
+</ul><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Lock&#0047;Unlock switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Driver&#8217;s side<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Locks&#0047;unlocks all the doors and tailgate when the driver carrying the keyless operation key presses the lock&#0047;unlock switch on the front door outside handle. <br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Passenger&#8217;s side<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Tailgate lock release handle (tailgate open switch)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Unlocks all the doors and the tailgate when a driver carrying the keyless operation key presses the tailgate lock release handle. <br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Tailgate lock release handle (tailgate lock switch)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Locks all the doors and tailgate when the driver carrying the keyless operation key presses the lock switch on the tailgate lock release handle. <br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="3">Exterior transmitter antenna assembly<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Driver&#8217;s side<br></td>
+<td valign="top" colspan="NaN" rowspan="3">Converts the data output from KOS&#0038;OSS-ECU via wire into a signal, and sends it to the keyless operation key (For more information on the transmission&#0047;reception area, refer to the door entry function valid area <a href="javascript:JumpPage('M242100910048800ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Passenger&#8217;s side<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Tailgate<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Interior transmitter antenna assembly<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Front<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Converts the data output from KOS&#0038;OSS-ECU via wire into a signal, and sends it to the keyless operation key (For more information on the transmission&#0047;reception area, refer to the one-touch start system valid area <a href="javascript:JumpPage('M242100120011300ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Outer buzzer<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The outer buzzer sounds when:<br><b></b><br><ul>
+<li>The doors are locked or unlocked by the door entry function.<br></li>
+<li>The keyless operation key is carried away from the vehicle when the power supply mode is other than OFF, and the door is closed.<br></li>
+<li>The lock&#0047;unlock switch on the front door is pressed when the power supply mode is other than OFF.<br></li>
+<li>The tailgate open, lock switch on the tailgate is pressed when the power supply mode is other than OFF.<br></li>
+<li>The lock&#0047;unlock switch on the front door is pressed when the keyless operation key is still located inside the car.<br></li>
+<li>The lock&#0047;unlock switch on the front door is pressed when the door is ajar.<br></li>
+<li>The tailgate open, lock switch on the tailgate is pressed when the tailgate is ajar.<br></li>
+<li>The driver&#8217;s door is opened when the keyless operation key is not removed from the key slot located in the front floor console.<br></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Key slot<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Converts the data output from KOS&#0038;OSS-ECU via wire into a signal, sends it to the keyless operation key, and then sends the reply data signal from keyless operation key to KOS&#0038;OSS-ECU.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Engine switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>Output of engine switch ON&#0047;OFF signal to KOS&#0038;OSS-ECU<br></li>
+<li>Input of LED signal from KOS&#0038;OSS-ECU.<br></li>
+</ul><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Combination meter (Keyless operation system display)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Communicates with the KOS&#0038;OSS-ECU via CAN. Receives the warning request or warning information from the KOS&#0038;OSS-ECU, and display the warning.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">ETACS-ECU<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>Communicates with KOS&#0038;OSS-ECU via CAN. By the door lock&#0047;unlock request or tailgate lock&#0047;unlock request from KOS&#0038;OSS-ECU, ETACS-ECU outputs the lock&#0047;unlock signal. When the door lock&#0047;unlock signal is output, the ETACS-ECU flashes or illuminates the turn-signal lamps and the room lamp to notify the driver that the doors are locked&#0047;unlocked. Furthermore, by the multi-mode function of keyless entry, the folding&#0047;unfolding of door mirrors is performed depending on the pattern of door lock&#0047;unlock request from KOS&#0038;OSS-ECU.<br></li>
+<li>Communicates with KOS&#0038;OSS-ECU via CAN, and outputs the door switch ON&#0047;OFF signal.<br></li>
+</ul><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Engine-ECU<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Communicates with KOS&#0038;OSS-ECU through CAN. Permits&#0047;inhibits the engine starting and controls the engine operation.<br></td>
+</tr>
+</table>
+<table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff"><sup>&#0042;</sup>: When registering the keyless operation keys, KOS&#0038;OSS-ECU numbers each key (1 to 4) in the order they are registered (initial priority). This priority is renewed each time the driver&#8217;s door is locked&#0047;unlocked and the engine switch is pressed. For example, when only keys 1 and 3 have responded to the signal sent from KOS&#0038;OSS-ECU, the new priority of the keys would be 1-3-2-4. When keys 3 and 4 have responded, then the priority of the keys becomes 3-4-1-2.<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>System configuration</h3><br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/42/ACF01069AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/42/ACF01069AB00ENG.png"></a><br><center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/42/html/M242100010074800ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:51 GMT -->
+</html>

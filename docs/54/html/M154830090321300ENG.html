@@ -1,0 +1,2971 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/54/html/M154830090321300ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:03:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Diagnosis Item
+4: Diagnose shorts between CAN&#0095;H and L lines (MAIN). &#0060;Vehicles for LHD&#0062;</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>Diagnosis Item
+4: Diagnose shorts between CAN&#0095;H and L lines (MAIN). &#0060;Vehicles for LHD&#0062;</h1><br><hr width="90%"><a name=""></a><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When servicing a CAN bus line,
+earth yourself by touching a metal object such as an unpainted water pipe. If you fail to do,
+a component connected to the CAN bus line may be broken.<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>TROUBLE JUDGEMENT</h3><br>When all of the following conditions are met, the M.U.T.-III determines that a short circuit
+is present between CAN&#0095;L and CAN&#0095;H lines.<br><b></b><br><ul>
+<li>The M.U.T.-III cannot receive the periodic transmission
+data from any ECUs.<br></li>
+<li>The voltage between CAN main bus lines (CAN&#0095;L and CAN&#0095;H lines)
+is 1.0 V or more, 4.0 V or less.<br></li>
+<li>The resistance at CAN main bus line (CAN&#0095;L and CAN&#0095;H lines) is
+2 &#0937; or less.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>TROUBLESHOOTING HINTS</h3><br><b></b><br><ul>
+<li>Malfunction of the wiring harness<br></li>
+<li>Malfunction of the connector<br></li>
+<li>Malfunction of the ETACS-ECU<br></li>
+<li>Malfunction of the combination meter<br></li>
+<li>Malfunction of the gateway-ECU &#0060;Vehicles with automatic A/C, 4WD and 5M/T&#0062;<br></li>
+<li>Malfunction of the transfer-ECU &#0060;Vehicles with 4WD&#0062;<br></li>
+<li>Malfunction of the steering wheel sensor &#0060;Vehicles with ASTC&#0062;<br></li>
+<li>Malfunction of the KOS&#0038;OSS-ECU &#0060;Vehicles with keyless operation
+system&#0062;<br></li>
+<li>Malfunction of the SRS-ECU<br></li>
+<li>Malfunction of the ABS-ECU &#0060;Vehicles without ASTC&#0062; or ASTC-ECU &#0060;Vehicles
+with ASTC&#0062;<br></li>
+<li>Malfunction of the A/T-ECU &#0060;Vehicles with A/T&#0062;<br></li>
+<li>Malfunction of the engine-ECU<br></li>
+<li>Malfunction of the electric parking brake-ECU<br></li>
+<li>Malfunction of the clearance warning control unit &#0060;Vehicles with ultrasonic
+misacceleration mitigation, blind spot warning or corner sensor system&#0062;<br></li>
+<li>FCM-ECU &#0060;Vehicles with forward collision mitigation system&#0062;<br></li>
+<li>e-Call control unit &#0060;Vehicles for RUSSIA&#0062;<br></li>
+</ul>
+<hr width="90%"><a name=""></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>DIAGNOSIS PROCEDURE</h2><br></td>
+</tr>
+</table><a name="A1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 1. Connector check: D-25 intermediate connector</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The strand end of the twist wire should be within 10 cm from
+the connector.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 2.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the defective connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 2. Resistance measurement at D-25 intermediate connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect intermediate connector, and measure at its female-side intermediate
+connector (at the front wiring harness side).<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between D-25 intermediate connector terminal No.18 and No. 19<br><b></b><b>OK: 120 &#0177; 20 &#0937;<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#F8"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>&#0060;Within 120 &#0177; 20 &#0937;&#0062; Go to Step 8.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Not within 120 &#0177; 20 &#0937;&#0062; Go to Step 3.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A3"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 3. Connector check: joint connector (CAN3)</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The strand end of the twist wire should be within 10 cm from
+the connector.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%" valign="top"><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/ACE02953AB00ENG.png')"><img width="250" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/ACE02953AB00ENG.png"></a><br></td>
+<td width="65%" valign="top">When checking the joint connector, ensure that its wiring harness side and its short pins
+are not damaged.<br><h3>Q.
+            Is the check result normal?<br></h3><a href="#A4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 4.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair a defective connector or replace the joint connector.<br><br></td>
+</tr>
+</table><a name="A4"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 4. Resistance measurement at joint connector (CAN3).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN3), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN3) terminal Nos.11 and 22<br><b></b><b>OK: 120 &#0177; 20 &#0937;<br></b><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">Strictly observe the specified wiring harness repair procedure.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">YES <a href="#A6"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn008.png"></a> : &#0060;Within 120 &#0177; 20 &#0937;&#0062; Go to Step 6.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">NO <a href="#A5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn008.png"></a> : &#0060;Not within 120 &#0177; 20 &#0937;&#0062; Go to Step 5.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A5"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 5. Resistance measurement at engine-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the engine-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance between engine-ECU connector terminal Nos.101 and 102 &#0060;6B31&#0062;<br><b></b><b>OK: 120 &#0177; 20 &#0937;<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Resistance between engine-ECU connector terminal Nos.108 and 109 &#0060;4N15
+or 4D56&#0062;<br><b></b><b>OK: 120 &#0177; 20 &#0937;<br></b><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">Strictly observe the specified wiring harness repair procedure.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;Within 120 &#0177; 20 &#0937;&#0062; Check intermediate connector, and
+repair if necessary. If the intermediate connector is in good condition, repair the wiring harness between
+joint connector (CAN3) and the engine-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Not within 120 &#0177; 20 &#0937;&#0062; Check the engine-ECU connector,
+and repair if necessary. If the engine-ECU connector is in good condition, replace the engine-ECU
+(Refer to GROUP 13B &#0045; Engine-ECU &#0060;6B31&#0062;, GROUP 13C &#0045; Engine-ECU &#0060;4N15&#0062; or
+GROUP 13E &#0045; Engine-ECU <a href="javascript:JumpPage('M113300920088600ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a> &#0060;4D56&#0062;).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A6"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 6. Resistance measurement at joint connector (CAN3).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN3), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN3) terminal Nos.9 and 20<br><b></b><b>OK: 1 k&#0937; or more<br></b><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">Strictly observe the specified wiring harness repair procedure.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN3) and D-25 intermediate connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A7"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 7.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A7"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 7. Resistance measurement at FCM-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the FCM-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance between FCM-ECU connector terminal Nos.2 and 7<br><b></b><b>OK: 1 k&#0937; or more<br></b><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">Strictly observe the specified wiring harness repair procedure.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN3) and the FCM-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the FCM-ECU connector, and repair
+if necessary. If the FCM-ECU connector is in good condition, replace the FCM-ECU (Refer to GROUP
+35C &#0045; FCM-ECU).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="F8"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 8. Connector check: joint connector (CAN1)</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The strand end of the twist wire should be within 10 cm from
+the connector.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%" valign="top"><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/ACE02953AB00ENG.png')"><img width="250" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/ACE02953AB00ENG.png"></a><br></td>
+<td width="65%" valign="top">When checking the joint connector, ensure that its wiring harness side and its short pins
+are not damaged.<br><h3>Q.
+            Is the check result normal?<br></h3><a href="#A8"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 9.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair a defective connector or replace the joint connector.<br><br></td>
+</tr>
+</table><a name="A8"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 9. Resistance measurement at joint connector (CAN1).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN1), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN1) terminal Nos.10 and 21<br><b></b><b>OK: 120 &#0177; 20 &#0937;<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">YES <a href="#B4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn008.png"></a> : &#0060;Within 120 &#0177; 20 &#0937;&#0062; Go to Step 22.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#C9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Not within 120 &#0177; 20 &#0937;&#0062; Go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="C9"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 10. Connector check: joint connector (CAN2)</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The strand end of the twist wire should be within 10 cm from
+the connector.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%" valign="top"><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/AC209350AC00ENG.png')"><img width="250" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/54/AC209350AC00ENG.png"></a><br></td>
+<td width="65%" valign="top">When checking the joint connector, ensure that its wiring harness side and its short pins
+are not damaged.<br><h3>Q.
+            Is the check result normal?<br></h3><a href="#B2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 11.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair a defective connector or replace the joint connector.<br><br></td>
+</tr>
+</table><a name="B2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 11. Resistance measurement at joint connector (CAN2).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN2), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN2) terminal Nos.11 and 22<br><b></b><b>OK: 120 &#0177; 20 &#0937;<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">YES <a href="#E3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn008.png"></a> : &#0060;Within 120 &#0177; 20 &#0937;&#0062; Go to Step 13.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">NO <a href="#B3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn008.png"></a> : &#0060;Not within 120 &#0177; 20 &#0937;&#0062; Go to Step 12.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="B3"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 12. Resistance measurement at ETACS-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the ETACS-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at ETACS-ECU connector terminal Nos.56 and 65<br><b></b><b>OK: 120 &#0177; 20 &#0937;<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;Within 120 &#0177; 20 &#0937;&#0062; Repair the wiring harness between
+joint connector (CAN2) and the ETACS-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Not within 120 &#0177; 20 &#0937;&#0062; Check the ETACS-ECU connector,
+and repair if necessary. If the ETACS-ECU connector is in good condition, replace the ETACS-ECU
+(Refer to GROUP 54A &#0045; ETACS, ETACS-ECU).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="E3"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 13. Resistance measurement at joint connector (CAN2).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN2), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN2) terminal Nos.1 and 12<br><b></b><b>OK: 1 k&#0937; or more<br></b><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">Strictly observe the specified wiring harness repair procedure.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#D2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>&#0060;1 k&#0937; or more&#0062; Go to Step 15.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#E4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 14.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="E4"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 14. Resistance measurement at A/T-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the A&#0047;T-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at A&#0047;T-ECU connector terminal Nos.16 and 24<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Check intermediate connector, and repair
+if necessary. If the intermediate connector is in good condition, repair the wiring harness
+between joint connector (CAN2) and the A/T-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the A&#0047;T-ECU connector,
+and repair if necessary. If the A&#0047;T-ECU connector is in good condition, replace the
+A&#0047;T-ECU (Refer to GROUP 23A &#0045; A/T-ECU).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 15. Resistance measurement at joint connector (CAN2).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN2), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN2) terminal Nos.4 and 15<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#D4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>&#0060;1 k&#0937; or more&#0062; Go to Step 17.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#D3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 16.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D3"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 16. Resistance measurement at transfer-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the transfer-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at transfer-ECU connector terminal Nos.55 and 56<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN2) and the transfer-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the transfer-ECU connector, and
+repair if necessary. If the transfer-ECU connector is in good condition, replace the transfer-ECU
+(Refer to GROUP 22A &#0045; Transfer-ECU <a href="javascript:JumpPage('M122110650009000ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a> &#0060;M/T&#0062;, GROUP
+23A &#0045; Transfer-ECU &#0060;A/T&#0062;).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D4"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 17. Resistance measurement at joint connector (CAN2).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN2), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN2) terminal Nos.2 and 3<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">YES <a href="#D6"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn008.png"></a> : &#0060;1 k&#0937; or more&#0062; Go to Step 19.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#D5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 18.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D5"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 18. Resistance measurement at combination meter connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the combination meter, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at combination meter connector terminal Nos.14 and 15<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN2) and the combination meter connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the combination meter connector,
+and repair if necessary. If the combination meter connector is in good condition, replace the combination
+meter (Refer to GROUP 54A &#0045; Combination Meter, Combination Meter).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D6"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 19. Resistance measurement at joint connector (CAN2).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN2), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN2) terminal Nos.6 and 17<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#C2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>&#0060;1 k&#0937; or more&#0062; Go to Step 21.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#D7"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 20.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D7"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 20. Resistance measurement at steering wheel sensor connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the steering wheel sensor, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at steering wheel sensor connector terminal Nos.3 and 4<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN2) and the steering wheel sensor connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the steering wheel sensor connector,
+and repair if necessary. If the steering wheel sensor connector is in good condition, replace the
+column switch (integrated with steering wheel sensor) (Refer to GROUP 54A &#0045; Column
+Switch).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="C2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 21. Resistance measurement at joint connector (CAN2).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN2), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN2) terminal Nos.10 and 21<br><b></b><b>OK: 1 k&#0937; or more<br></b><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">Strictly observe the specified wiring harness repair procedure.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN2) and joint connector (CAN1).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the diagnosis connector, and
+repair if necessary. If the diagnosis connector is in good condition, repair the wiring harness
+between joint connector (CAN2) and the diagnosis connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="B4"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 22. Resistance measurement at joint connector (CAN1).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN1), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN1) terminal Nos.8 and 19<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#B6"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>&#0060;1 k&#0937; or more&#0062; Go to Step 24.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#B5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 23.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="B5"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 23. Resistance measurement at KOS&#0038;OSS-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the KOS&#0038;OSS-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance between KOS&#0038;OSS-ECU connector terminal Nos.35 and 51<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN1) and the KOS&#0038;OSS-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the KOS&#0038;OSS-ECU connector,
+and repair if necessary. If the KOS&#0038;OSS-ECU connector is in good condition, replace
+the KOS&#0038;OSS-ECU (Refer to GROUP 42B &#0045; KOS&#0038;OSS-ECU).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="B6"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 24. Resistance measurement at joint connector (CAN1).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN1), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN1) terminal Nos.7 and 18<br><b></b><b>OK: 1 k&#0937; or more<br></b><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">Strictly observe the specified wiring harness repair procedure.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">YES <a href="#C0"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn008.png"></a> : &#0060;1 k&#0937; or more&#0062; Go to Step 26.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#B7"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 25.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="B7"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 25. Resistance measurement at SRS-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the SRS-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance between SRS-ECU connector terminal Nos.33 and 34<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN1) and the SRS-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the SRS-ECU connector, and repair
+if necessary. If the SRS-ECU connector is in good condition, replace the SRS-ECU (Refer to GROUP
+52B &#0045; SRS-ECU).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="C0"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 26. Resistance measurement at joint connector (CAN1).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN1), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN1) terminal Nos.2 and 13<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#D0"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>&#0060;1 k&#0937; or more&#0062; Go to Step 28.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#C1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 27.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="C1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 27. Resistance measurement at electric parking brake-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the electric parking brake-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at electric parking brake-ECU connector terminal Nos.4 and 10<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN1) and the electric parking brake-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the electric parking brake-ECU
+connector, and repair if necessary. If the electric parking brake-ECU connector is in good condition, replace
+the electric parking brake-ECU (Refer to GROUP 36 &#0045; Electric Parking Brake-ECU).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D0"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 28. Resistance measurement at joint connector (CAN1).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN1), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN1) terminal Nos.5 and 16<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">YES <a href="#D8"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn008.png"></a> : &#0060;1 k&#0937; or more&#0062; Go to Step 30.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#D1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 29.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 29. Resistance measurement at ABS-ECU or ASTC-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the ABS-ECU or ASTC-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at ABS-ECU or ASTC-ECU connector terminal Nos.4 and 16<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN1) and the ABS-ECU or ASTC-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the ABS-ECU or ASTC-ECU connector,
+and repair if necessary. If the ABS-ECU or ASTC-ECU connector is in good condition, replace the
+ABS-ECU (Refer to GROUP 35B &#0045; Hydraulic Unit) or ASTC-ECU (Refer to GROUP 35C &#0045; Hydraulic Unit).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D8"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 30. Resistance measurement at joint connector (CAN1).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN1), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN1) terminal Nos.6 and 17<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#E0"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>&#0060;1 k&#0937; or more&#0062; Go to Step 32.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#D9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 31.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="D9"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 31. Resistance measurement at clearance warning control unit
+connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the clearance warning control unit, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at clearance warning control unit connector terminal Nos.3 and 4<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN1) and the clearance warning control unit connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the clearance warning control
+unit connector, and repair if necessary. If the clearance warning control unit connector is
+in good condition, replace the clearance warning control unit (Refer to GROUP 54A &#0045; Unintended
+Acceleration Mitigation System/Blind Spot Warning/Corner Sensor System, Clearance Warning Control
+Unit).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="E0"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 32. Resistance measurement at joint connector (CAN1).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN1), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN1) terminal Nos.11 and 22<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#F4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>&#0060;1 k&#0937; or more&#0062; Go to Step 34.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#E1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 33.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="E1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 33. Resistance measurement at gateway-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the gateway-ECU, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at gateway-ECU connector terminal Nos.2 and 3<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN1) and the gateway-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the gateway-ECU connector, and
+repair if necessary. If the gateway-ECU connector is in good condition, replace the gateway-ECU.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="F4"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 34. Resistance measurement at joint connector (CAN1).</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">The test wiring harness should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect joint connector (CAN1), and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)<table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">When measuring the resistance, disconnect the negative battery
+terminal.<br></td>
+</tr>
+</table>Ensure that the negative battery terminal is disconnected.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Resistance between joint connector (CAN1) terminal Nos.1 and 12<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN1) and D-25 intermediate connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#F5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>&#0060;Less than 1 k&#0937;&#0062; Go to Step 35.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="F5"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 35. Resistance measurement at e-Call control unit connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">A digital multimeter should be used.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the e-Call control unit, and measure at the equipment side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Resistance at e-Call control unit connector terminal Nos.24 and 25<br><b></b><b>OK: 1 k&#0937; or more<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">&#0060;1 k&#0937; or more&#0062; Repair the wiring harness between joint
+connector (CAN1) and the gateway-ECU connector.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">&#0060;Less than 1 k&#0937;&#0062; Check the e-Call control unit connector,
+and repair if necessary. If the e-Call control unit connector is in good condition, replace
+the e-Call control unit (Refer to GROUP 54A &#0045; Era-Glonass System, e-Call Control Unit <a href="javascript:JumpPage('M154560550001900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/54/html/M154830090321300ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:03:35 GMT -->
+</html>

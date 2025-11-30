@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/35/html/M135900020004300ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>DIAGNOSTIC
+FUNCTION</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>DIAGNOSTIC
+FUNCTION</h1><br>ACC/FCM-ECU has the following functions for easier system checks.<br><b></b><br><ul>
+<li>Diagnosis code set (Refer to <a href="javascript:JumpPage('M135900030005100ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Data list output (Refer to <a href="javascript:JumpPage('M135900050004400ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Special function (Refer to <a href="javascript:JumpPage('M135900740002600ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Freeze frame data output.<br></li>
+<li>Fail-safe functions.<br></li>
+</ul>All the above items can be diagnosed using M.U.T.-III.<br><hr width="90%"><a name="T1"></a><h2>CHECK OF FREEZE FRAME DATA</h2><br>The freeze frame data can be checked by using the M.U.T.-III.<br><a name=""></a><hr width="70%">When detecting fault and setting the diagnosis code, the ECU connected to CAN bus line
+obtains the data before the determination of the diagnosis code and the data when the diagnosis
+code is determined, and then stores the ECU status of that time. By analysing each data from
+M.U.T.-III, the troubleshooting can be performed more efficiently. The displayed items are as
+the table below.<br><br><b><b>Display item list</b></b><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Item No.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Item name<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Data item<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Unit<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Odometer<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance after the diagnosis code is generated<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">km<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Odometer(Last time fail detect.)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance when the diagnosis code is set at the last
+trouble judgement.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">km<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">3<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Detection counter<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">How many times the same diagnosis code was set (counted as "0" when
+the malfunction occurs for the first time)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">times<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">4<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ignition cycle<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">How many times the ignition switch is turned "ON" since the diagnosis
+code is set as "historic fault". <br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">times<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">5<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ECU power supply voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Power supply voltage to the ECU when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">V<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">6<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RADAR temperature<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Internal temperature in the radar when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0176;C<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">7<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Outside temperature<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ambient temperature when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0176;C<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">8<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Steering wheel angle<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Steering wheel angle, which is received from the steering wheel sensor
+when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">deg<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">9<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Accelerator pedal position<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Accelerator pedal opening angle, which is received from the engine-ECU
+when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0037;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">10<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Yaw rate<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Yaw rate value, which is received from the yaw-rate sensor when the
+diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">deg&#0047;s<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">11<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">AS&#0038;G status<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">12<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">A.S.C. status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The ASTC status when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">13<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Master cylinder pressure<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The pressure in the master cylinder, which is received from the master
+cylinder pressure sensor when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">MPa<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">14<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Longitudinal acceleration<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Longitudinal acceleration when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">m&#0047;s<sup>2</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">15<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Lateral acceleration<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Lateral acceleration when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">m&#0047;s<sup>2</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">16<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vehicle speed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vehicle speed when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">km&#0047;h<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">17<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM function<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM system status when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">18<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RADAR blockage state<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Radar status when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">19<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Auto brake request<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Request for automatic braking when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">20<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Auto brake acknowledge<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Response status of automatic braking when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">21<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Target deceleration<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Target deceleration when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">m&#0047;s<sup>2</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">22<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Brake prefill request<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Request status for pre-fill brake when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">23<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Brake assist request<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Request status for brake assist when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">24<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Engine brake request<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">25<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Brake prefill acknowledge<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Response status for pre-fill brake when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">26<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Brake assist acknowledge<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Response from brake assist when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">27<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Engine brake acknowledge<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">28<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM:Standstill state<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Not used.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">29<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Brake switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Stop lamp switch status when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">30<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ignition switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ignition switch status (IG1) when the diagnosis code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">31<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC system status<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Not used (ACC system only).<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">32<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Auto brake status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Status of automatic braking controlled by ASTC when the diagnosis
+code is set<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">33<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC:Set speed<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Not used (ACC system only).<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">34<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC:Set speed (unit)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Not used (ACC system only).<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">35<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vertical alignment (Current)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">How much the radar axis is compensated vertically when the diagnosis
+code is set.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">deg<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">36<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Horizontal alignment (Current)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">How much the radar axis is compensated horizontally when the diagnosis
+code is set.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">deg<br></td>
+</tr>
+</table>
+<hr width="90%"><a name=""></a><h2>FAIL-SAFE FUNCTIONS</h2><br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/35/ACF01453AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/35/ACF01453AB00ENG.png"></a><br>If the ACC/FCM-ECU determines that the system fails, the ECU will activate the FCM OFF indicator
+lamp and a message ("FCM TEMPORARILY NOT AVAILABLE", "FCM SERVICE REQUIRED" or "FCM RADAR BLOCKED")
+on the multi-information display.<br><a name=""></a><hr width="70%">
+<h3>Activating the indicator lamp and warning message when a malfunction
+occurs</h3><br><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Diagnosis code No.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Inspection item<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Message "FCM TEMPORARILY NOT AVAILABLE"<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Message "FCM SERVICE REQUIRED"<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Message "FCM RADAR BLOCKED"<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1394<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">INCOMP.learn neutral(SAS)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1707<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Implausible coding data<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1750<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC&#0047;FCM voltage out of range<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1751<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC&#0047;FCM ECU failure<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1752&#0042;<sup>1</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC&#0047;FCM radar TEMP.out of range<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1753&#0042;<sup>1</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC&#0047;FCM radar blockage detected<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1754<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC&#0047;FCM radar CAL. Not COMP<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0042;<sup>2</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1772<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Alignment sensor too far (Right)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1773<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Alignment sensor too far (Left)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1774<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Alignment sensor too far (Lower)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1775<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Alignment sensor too far (Upper)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1777<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">System fail detected (ASC)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1778<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">SAS internal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1781<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">SAS internal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1782<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">SAS signal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1784<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FCM switch fixed ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1785<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Fault detect signal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1787<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">APS signal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1792<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Brake M&#0047;C PRS. signal (invalid)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1794<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Longitudinal G signal (invalid)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1795<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Yawrate signal (invalid)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1796<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">APS signal (invalid)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1808<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Noise error<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2256<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Brake switch signal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2257<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ASC signal failure 1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2258<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ASC signal failure 2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2259<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ASC signal failure 3<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2260<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ASC signal failure 4<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2261<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ASC signal failure 5<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2262<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">SAS offset threshold exceed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2263&#0042;<sup>1</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Yawrate offset threshold exceed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2264<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Estimated tyre size exceed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2265<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Unavailable reference velocity<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2266<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Unavailable of Yawrate quality<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2267<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Wheel speed signal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2268<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Distance travelled signal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2270<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Current gear signal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2271<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">SAS signal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2272<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Delta SAS signal fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2273<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F state signal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2274<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Reduction gear state signal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2275<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff. lock state signal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2276<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Brake switch signal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2277<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine status signal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2278<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ACC&#0047;FCM signal (A&#0047;T No response)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2296<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">CAN buffer error<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2297<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">CAN transmit error<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0100<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0101<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;M CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0114<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer-ECU CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0121<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ASTC CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0126<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">SAS CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0141<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ETACS CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0155<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U1195<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Coding not completed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;&#0042;<sup>3</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+</table>
+<table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff"><b></b><br><ul>
+<li>&#0042;<sup>1</sup>: The diagnosis code may not be detected when the FCM system
+is switched OFF.<br></li>
+<li>&#0042;<sup>2</sup>: The FCM OFF indicator lamp flashes at approximately 1 Hz
+when the radar has not been calibrated, and at approximately 2 Hz while it is calibrated.<br></li>
+<li>&#0042;<sup>3</sup>: When the ACC/FCM-ECU is at bus off, no diagnosis code is
+set but the message "FCM TEMPORARILY NOT AVAILABLE" will be displayed.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<hr width="90%"><a name=""></a><h2>HOW TO READ DIAGNOSIS CODE</h2><br>Refer to GROUP 00 &#0045; How to Use Troubleshooting and Inspection Service Points.<br><hr width="90%"><a name=""></a><h2>HOW TO ERASE DIAGNOSIS CODE</h2><br>Refer to GROUP 00 &#0045; How to Use Troubleshooting and Inspection Service Points.<br><center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/35/html/M135900020004300ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:09 GMT -->
+</html>

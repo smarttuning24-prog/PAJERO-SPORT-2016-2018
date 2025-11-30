@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/35/html/M135203430003300ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:01:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Code No. C1014: FL wheel speed sensor performance<br />Code No. C101F: FR wheel speed sensor performance<br />Code No. C102A: RL wheel speed sensor performance<br />Code No. C1035: RR wheel speed sensor performance</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>Code No. C1014: FL wheel speed sensor performance<br />Code No. C101F: FR wheel speed sensor performance<br />Code No. C102A: RL wheel speed sensor performance<br />Code No. C1035: RR wheel speed sensor performance</h1><br><hr width="90%"><a name=""></a><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa"><b></b><br><ul>
+<li>If there is any problem in the CAN bus lines, an incorrect diagnosis code may be set. Prior to this diagnosis, diagnose the CAN bus lines (Refer to GROUP 54C &#0045; CAN Bus Diagnostics Table <a href="javascript:JumpPage('M154830020331100ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Whenever ECU is replaced, ensure that the CAN bus lines are normal.<br></li>
+</ul>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>OPERATION</h3><br><b></b><br><ul>
+<li>A toothed rotor (for wheel speed detection) generates a voltage pulse as it moves across the pickup field of each wheel speed sensor.<br></li>
+<li>The wheel speed sensor transmit the frequency of the pulses to the ABS-ECU.<br></li>
+<li>The hydraulic unit assembly (integrated with ABS-ECU) modulates the amount of braking force individually applied to each wheel cylinder.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>DIAGNOSIS CODE SET CONDITIONS</h3><br>ABS-ECU monitors the signals from each wheel speed sensor while the vehicle is being driven. If any fault below is found in these sensor signals, ABS-ECU will set the relevant diagnosis code.<br><b></b><br><ul>
+<li>Irregular change in the wheel speed sensor signal<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>PROBABLE CAUSES</h3><br><b>Current trouble</b><br><ul>
+<li>Malfunction of the wheel speed sensor<br></li>
+<li>Excessive gap between the wheel speed sensor and the rotor (for wheel speed detection)<br></li>
+<li>Malfunction of the wheel speed sensor installation<br></li>
+<li>Malfunction of the wheel bearing<br></li>
+<li>Malfunction of the front axle hub assembly<br></li>
+<li>Malfunction of the Axle shaft bearing<br></li>
+<li>Deformation of the rotor (for wheel speed detection)<br></li>
+<li>Damaged wiring harness and connectors<br></li>
+<li>Malfunction of the hydraulic unit assembly (integrated with ABS-ECU)<br></li>
+</ul><b>Past trouble</b><br><ul>
+<li>Carry out diagnosis with particular emphasis on wiring harness and connector failures between ABS-ECU and the wheel speed sensor. For diagnosis procedures, refer to How to treat past trouble (GROUP 00 &#0045; How to Cope with Intermittent Malfunctions <a href="javascript:JumpPage('M100101390056900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+</ul>
+<hr width="90%"><a name=""></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>DIAGNOSIS PROCEDURE</h2><br></td>
+</tr>
+</table><a name="A1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 1. M.U.T.-III CAN bus diagnosis</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">Use M.U.T.-III to diagnose the CAN bus lines.<br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 3.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Repair the CAN bus lines (Refer to GROUP 54C &#0045; CAN Bus Diagnostics Table <a href="javascript:JumpPage('M154830020331100ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>). On completion, go to Step 2.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 2. Diagnosis code recheck after resetting CAN bus lines</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Turn the ignition switch to the "ON" position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Drive the vehicle at 15 km&#0047;h or more.<br><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">The ABS warning lamp does not turn OFF in some cases unless the vehicle runs at 15 km&#0047;h or higher.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Erase the diagnosis code.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is diagnosis code No. C101F, C1014, C1035 or C102A set?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 3.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">The procedure is complete.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A3"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 3. M.U.T.-III data list</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">Check the following data list (Refer to <a href="javascript:JumpPage('M135201150154500ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>(When code No. C1014 is set) Item 01: FL wheel speed sensor<br></li>
+<li>(When code No. C101F is set) Item 02: FR wheel speed sensor<br></li>
+<li>(When code No. C102A is set) Item 03: RL wheel speed sensor<br></li>
+<li>(When code No. C1035 is set) Item 04: RR wheel speed sensor<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A8"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 9.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 4.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A5"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 4. Harness and connector check</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Check the wheel speed sensor (FL, FR, RL or RR).<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Check the ABS-ECU connector.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Check the wiring harness and connector between the ABS-ECU connector and the wheel speed sensor (FL, FR, RL or RR).<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 5.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Repair the defective connector or the wiring harness. Then go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 5. Check for wheel speed sensor installation</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">Refer to <a href="javascript:JumpPage('M135202070028700ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A7"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 6.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Repair the wheel speed sensor. (Refer to <a href="javascript:JumpPage('M135202070028700ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.) Then go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A7"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 6. Check for wheel speed sensor as a single unit</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">Refer to <a href="javascript:JumpPage('M135202080019800ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 7.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Replace the wheel speed sensor (Refer to <a href="javascript:JumpPage('M135202070028700ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>). Then go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A4"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 7. Check for rotor (for wheel speed detection) installation</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b>&#0060;Front&#0062;</b><br><ul>
+<li>Refer to GROUP 26 &#0045; Front Axle Hub Assembly Removal and Installation <a href="javascript:JumpPage('M126100170231500ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b>&#0060;Rear&#0062;</b><br><ul>
+<li>Refer to GROUP 27 &#0045; Axle Shaft Assembly Disassembly and Reassembly <a href="javascript:JumpPage('M127100270030200ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 8.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Replace the rotor (for wheel speed detection). Then go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 8. Front axle hub assembly and wheel bearing or axle shaft bearing check</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Check the front axle hub assembly (Refer to GROUP 26, Front Axle Hub Assembly Removal and Installation <a href="javascript:JumpPage('M126100170231500ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Check the wheel bearing (Refer to GROUP 26, On-vehicle Service <a href="javascript:JumpPage('M126100110077100ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Check the axle shaft bearing (Refer to GROUP 27, On-vehicle Service <a href="javascript:JumpPage('M127100130008802ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A8"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 9.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Replace the front axle hub assembly or wheel bearing or axle shaft bearing. Then go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A8"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 9. Check whether the diagnosis code is set again.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Turn the ignition switch to the "ON" position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Drive the vehicle at 15 km&#0047;h or more.<br><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">The ABS warning lamp does not turn OFF in some cases unless the vehicle runs at 15 km&#0047;h or higher.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Erase the diagnosis code.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is diagnosis code No. C101F, C1014, C1035 or C102A set?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Replace the hydraulic unit assembly (integrated with ABS-ECU) (Refer to <a href="javascript:JumpPage('M135200860136000ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>). Then go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Intermittent malfunction (Refer to GROUP 00 &#0045; How to Cope with Intermittent Malfunctions <a href="javascript:JumpPage('M100101390056900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="A9"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 10. Check whether the diagnosis code is set again.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Turn the ignition switch to the "ON" position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to the "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Drive the vehicle at 15 km&#0047;h or more.<br><table class="fontattn5" border="1" width="85%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">The ABS warning lamp does not turn OFF in some cases unless the vehicle runs at 15 km&#0047;h or higher.<br></td>
+</tr>
+</table>
+</td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Erase the diagnosis code.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is diagnosis code No. C101F, C1014, C1035 or C102A set?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#A1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Return to Step 1.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">This diagnosis is complete.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/35/html/M135203430003300ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:01:58 GMT -->
+</html>

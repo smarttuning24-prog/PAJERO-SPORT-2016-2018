@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/13/html/M113350020080600ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 05:47:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Code No. P0106: Manifold Absolute Pressure Sensor Range/Performance Problem</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>Code No. P0106: Manifold Absolute Pressure Sensor Range/Performance Problem</h1><br><hr width="90%"><a name="A1"></a><a name=""></a><hr width="70%">
+<h3>OPERATION</h3><br><b></b><br><ul>
+<li>A power voltage of 5 V is applied to the manifold absolute pressure sensor power terminal from the engine-ECU connector terminal MAP5 and earthed to the engine-ECU connector terminal MAPE from the manifold absolute pressure sensor connector terminal.<br></li>
+<li>The sensor signal is inputted to the engine-ECU connector terminal MAP from the manifold absolute pressure sensor output terminal.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>FUNCTION</h3><br><b></b><br><ul>
+<li>The manifold absolute pressure sensor converts the manifold absolute pressure into a voltage signal and inputs the signal to the engine-ECU.<br></li>
+<li>In response to the signal, the engine-ECU corrects the fuel injection amount, etc.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>TROUBLE JUDGEMENT</h3><br><b>Check Conditions</b><br><ul>
+<li>Battery positive voltage is 8 &#0045; 16 V<br></li>
+<li>2 seconds later after the ignition switch has been in "ON" position or the engine has started up.<br></li>
+<li>The following 3 conditions are formed: <br></li><b></b><br><ol>
+<li type="1">The engine cooling water temperature is from 80 to 115 &#0176;C.<br></li>
+<li type="1">The intake air temperature is from &#0045;5 to 80 &#0176;C.<br></li>
+<li type="1">The atmospheric pressure is from 76 to 120 kPa.<br></li>
+</ol>
+</ul><b>Judgement Criterion</b><br><ul>
+<li>When an idle state and an engine rotation speed of 2,000 r/min continue for 3 seconds, manifold absolute pressure are read and the difference between them goes under 800 Pa for 5 seconds.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>FAIL-SAFE AND BACKUP FUNCTION</h3><br><b></b><br><ul>
+<li>The pressure in the inlet manifold is controlled to be 100 kPa.<br></li>
+<li>The EGR control is stopped (fully closed).<br></li>
+<li>The turbocharger control is prohibited.<br></li>
+<li>The throttle valve is opened (Electrical discontinuity).<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>PROBABLE CAUSES</h3><br><b></b><br><ul>
+<li>Vacuum hose clogged between manifold absolute pressure sensor and inlet manifold<br></li>
+<li>Failed manifold absolute pressure sensor<br></li>
+<li>Manifold absolute pressure sensor circuit harness damage or loose connector contact.<br></li>
+<li>EGR cooler clogged.<br></li>
+<li>EGR pipe (A, B) clogged.<br></li>
+<li>EGR cooler by-pass valve clogged.<br></li>
+<li>Failed engine-ECU<br></li>
+</ul>
+<hr width="90%"><a name="A2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>DIAGNOSIS PROCEDURE</h2><br></td>
+</tr>
+</table><a name="S1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 1. M.U.T.-III data list</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Refer to Data List Reference Table <a href="javascript:JumpPage('M113300420133400ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></li><b></b><br><ol>
+<li type="a">Item 6: Manifold absolute pressure sensor<br></li>
+</ol>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S7"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 7.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 2.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 2. Check for vacuum hose for clogs between manifold absolute pressure sensor and inlet manifold.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Check whether the vacuum hose is clogged between the manifold absolute pressure sensor and the inlet manifold, which is caused by dirt and the hose folded. Also check the inside inlet manifold and the nipple that can be possibly contaminated with dirt.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 3.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S3"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 3. Perform voltage measurement at manifold absolute pressure sensor connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Use special tool test harness (MB991709) to connect connector, and measure at pick-up harness.<br></li>
+<li>Ignition switch: "ON"<br></li>
+<li>Voltage between terminal engine-ECU MAP5 line and body earth.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><b>OK: 4.9 &#0045; 5.1 V<br></b></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a><b></b><br><ul>Go to Step 4. <br></ul>
+</td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"><b></b><br><ul>Repair or replace the connector, or check and repair harness between manifold absolute pressure sensor connector terminal and engine-ECU connector terminal MAP5.<br><b></b><br><ul>
+<li type="1">Check power supply line for damage.<br></li>
+</ul>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S4"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 4. Perform voltage measurement at manifold absolute pressure sensor connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Use special tool harness (MB991709) to connect connector, and measure at pick-up harness.<br></li>
+<li>Ignition switch: "ON"<br></li>
+<li>Voltage between terminal engine-ECU MAPE line and body earth.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><b>OK: 0.5 V or less<br></b></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 5.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"><b></b><br><ul>Repair or replace the connector, or check and repair harness between manifold absolute pressure sensor connector terminal and engine-ECU connector terminal MAPE.<br><b></b><br><ul>
+<li type="1">Check earthing line for damage.<br></li>
+</ul>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S5"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 5. Perform voltage measurement at manifold absolute pressure sensor connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Use special tool harness (MB991709) to connect connector, and measure at pick-up harness.<br></li>
+<li>Ignition switch: "ON"<br></li>
+<li>Voltage between terminal engine-ECU MAP line and body earth.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><b>OK: The voltage should be 0.7 &#0045; 1.2 V. When the accelerator pedal is quickly depressed from the idling state, the voltage temporarily rises.<br></b></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S6"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 6. <br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the manifold absolute pressure sensor.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S6"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 6. Perform voltage measurement at engine-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Measure engine-ECU terminal voltage.<br></li>
+<li>Ignition switch: "ON"<br></li>
+<li>Voltage between terminal MAP and body earth.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><b>OK: The voltage should be 0.7 &#0045; 1.2 V. When the accelerator pedal is quickly depressed from the idling state, the voltage temporarily rises.<br></b></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S7"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 7.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"><b></b><br><ul>Repair or replace the connector, or check and repair harness between manifold absolute pressure sensor connector terminal and engine-ECU connector terminal MAP.<br><b></b><br><ul>
+<li type="1">Check output line for damage.<br></li>
+</ul>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S7"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 7. Check on clogged EGR cooler.</h2><br></td>
+</tr>
+</table>
+<table class="fontattn5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">When checking the clogged EGR cooler, make a visual check or use an air blower.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Check whether the EGR cooler is being clogged or not.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S8"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 8.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the EGR cooler.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S8"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 8. Check on clogged EGR pipe (A, B).</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Check whether the EGR pipe (A, B) is being clogged or not.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 9.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the EGR pipe (A, B).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S9"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 9. Check on clogged EGR cooler by-pass valve.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Check whether the EGR cooler by-pass valve is being clogged or not.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#T0"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the EGR cooler by-pass valve.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="T0"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 10. M.U.T.-III data list</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Refer to Data List Reference Table <a href="javascript:JumpPage('M113300420133400ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br></li><b></b><br><ol>
+<li type="a">Item 6: Manifold absolute pressure sensor<br></li>
+</ol>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">Intermittent malfunction (Refer to GROUP 00 &#0045; How to Use Troubleshooting/Inspection Service Points &#0045; How to Cope with Intermittent Malfunctions <a href="javascript:JumpPage('M100101390056900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>). <br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the engine-ECU.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/13/html/M113350020080600ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 05:47:01 GMT -->
+</html>

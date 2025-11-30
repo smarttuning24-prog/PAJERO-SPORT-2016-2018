@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/54/html/M154401720064500ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:03:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Code No.U0164:
+A/C CAN timeout</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>Code No.U0164:
+A/C CAN timeout</h1><br><hr width="90%"><a name=""></a><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa"><b></b><br><ul>
+<li>If diagnosis
+code U0164 is set in the multivision display, diagnose the CAN main bus line.<br></li>
+<li>Whenever the ECU is replaced, ensure that the communication circuit is normal.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">When the diagnosis codes relating to the CAN communication error are set, make sure of
+the vehicle equipment. When the vehicle is not equipped with the system the multivision display communicates
+to, the diagnosis code is always set. This is not abnormal.<br></td>
+</tr>
+</table>
+<hr width="90%"><a name=""></a><a name=""></a><hr width="70%">
+<h3>TROUBLE JUDGEMENT</h3><br>The multivision display receives signal from the A/C-ECU via CAN bus lines. If it cannot
+receive all the necessary signals from the A/C-ECU, diagnosis code U0164 is set.<br><a name=""></a><hr width="70%">
+<h3>COMMENTS ON TROUBLE SYMPTOM</h3><br><b>Current trouble</b><br><ul>
+<li>Connector(s) or wiring harness in the CAN bus lines between the A/C-ECU and the
+multivision display, the power supply system to the A/C-ECU, the A/C-ECU itself, or the multivision display
+may be defective.<br></li>
+</ul><b>Past trouble</b><br><ul>
+<li>Carry out diagnosis with particular emphasis on connector(s) or wiring harness in
+the CAN bus lines between the A/C-ECU and the multivision display, and the power supply system
+to the A/C-ECU. For diagnosis procedures, refer to "How to cope with past trouble" (Refer to
+GROUP 00 &#0045; How to Use Troubleshooting&#0047;Inspection Service Points).<br><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">For a past trouble, you may not find it by the M.U.T.-III CAN bus diagnostics even if
+there is any failure in CAN bus lines. In this case, refer to GROUP 00, How to Use Troubleshooting&#0047;Inspection
+Service Points. and check the CAN bus lines. You can narrow down the possible cause of the trouble
+by referring to the diagnosis code, which is set regarding the CAN communication-linked ECUs
+(Refer to GROUP 54C &#0045; CAN Bus Line Diagnostic Flow).<br></td>
+</tr>
+</table>
+</li>
+</ul><a name=""></a><hr width="70%">
+<h3>PROBABLE CAUSES</h3><br><b></b><br><ul>
+<li>Damaged harness wires and connectors<br></li>
+<li>Malfunction of A/C-ECU<br></li>
+<li>Malfunction of multivision display<br></li>
+</ul>
+<hr width="90%"><a name=""></a><h2>DIAGNOSIS PROCEDURE</h2><br><a name="S1"></a><h2>STEP 1. M.U.T.-III CAN bus diagnostics</h2><br>Use the M.U.T.-III to diagnose the CAN bus lines.<br><h3>Q.
+            Is the check result normal?<br></h3><a href="#S2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 2.<br><br><a href="#S4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Repair the CAN bus lines. (Refer to GROUP 54C &#0045; Troubleshooting <a href="javascript:JumpPage('M154830020340700ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).
+Repair the CAN bus line and go to Step 4.<br><br><a name="S2"></a><h2>STEP 2. M.U.T.-III other system diagnosis code</h2><br>Check that the A/C system sets a diagnosis code.<br><h3>Q.
+            Is the diagnosis code set?<br></h3><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">Diagnose the A/C-ECU troubleshooting (Refer to GROUP 55B &#0045; Troubleshooting).<br><br><a href="#S3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 3.<br><br><a name="S3"></a><h2>STEP 3. M.U.T.-III other system diagnosis code</h2><br>Check if a diagnosis code, which relates to CAN communication-linked systems below, is
+set.<br><b></b><br><ul>Combination meter<br><b></b><br><ul>
+<li type="1">Code No.U0164: A/C CAN timeout<br></li>
+</ul>
+</ul>
+<h3>Q.
+            Is the diagnosis code set?<br></h3><a href="#S4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 4.<br><br><a href="#S5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 5.<br><br><a name="S4"></a><h2>STEP 4. Check whether the diagnosis code is set again.</h2><br>Recheck if the diagnosis code is set.<br><table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Erase the diagnosis code.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to "ON" position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)On completion, check that the diagnosis code is not set again.<br></td>
+</table>
+<h3>Q.
+            Is the diagnosis code set?<br></h3><a href="#S6"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Replace heater control unit (integrated with A/C-ECU) and then go to Step 6.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">A poor connection, open circuit or other intermittent malfunction is present in
+the CAN bus lines between the A/C-ECU and the multivision display (Refer to GROUP 00 &#0045; How
+to use troubleshooting&#0047;Inspection Service Points).<br><br><a name="S5"></a><h2>STEP 5. Check whether the diagnosis code is set again.</h2><br>Recheck if the diagnosis code is set.<br><table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Erase the diagnosis code.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to "ON" position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)On completion, check that the diagnosis code is not set again.<br></td>
+</table>
+<h3>Q.
+            Is the diagnosis code set?<br></h3><a href="#S6"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Replace multivision display (Refer to <a href="javascript:JumpPage('M154401130055800ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>) and
+then go to Step 6.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">A poor connection, open circuit or other intermittent malfunction is present in
+the CAN bus lines between the A/C-ECU and the multivision display (Refer to GROUP 00 &#0045; How
+to use troubleshooting&#0047;Inspection Service Points).<br><br><a name="S6"></a><h2>STEP 6. Check whether the diagnosis code is set again.</h2><br>Recheck if the diagnosis code is set.<br><table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Erase the diagnosis code.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the ignition switch to "ON" position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)On completion, check that the diagnosis code is not set again.<br></td>
+</table>
+<h3>Q.
+            Is the diagnosis code set?<br></h3><a href="#S1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 1.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">The procedure is complete.<br><br><center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/54/html/M154401720064500ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:03:30 GMT -->
+</html>

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/13/html/M113175180125000ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 05:44:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Code No. P0340: Camshaft Position Sensor System</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>Code No. P0340: Camshaft Position Sensor System</h1><br><hr width="90%"><a name="A1"></a><a name=""></a><hr width="70%">
+<h3>OPERATION</h3><br><b></b><br><ul>
+<li>Power is supplied to the camshaft position sensor from the battery and is earthed to the engine-ECU connector terminal DGND from the camshaft position sensor.<br></li>
+<li>A power voltage of 5 V is applied to the camshaft position sensor output terminal from the engine-ECU connector terminal SGC.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>FUNCTION</h3><br><b></b><br><ul>
+<li>The camshaft position sensor detects the top dead centre on the compression stroke of the No. 1 cylinder and inputs a pulse signal to the engine-ECU.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>TROUBLE JUDGEMENT</h3><br><b>Check Condition, Judgement Criterion</b><br><ul>
+<li>Normal signal pattern has not been input for cylinder identification from the crankshaft position sensor signal and camshaft position sensor signal for 2 seconds.<br></li>
+</ul><b>Check Condition</b><br><ul>
+<li>Engine speed is more than 500 r&#0047;min.<br></li>
+<li>Engine is being cranked.<br></li>
+</ul><b>Judgement Criterion</b><br><ul>
+<li>Camshaft position sensor output voltage has not changed (no pulse signal is input) for 2 seconds.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>FAIL-SAFE AND BACKUP FUNCTION</h3><br><b></b><br><ul>
+<li>Engine runs in learned pattern until engine stops.<br></li>
+<li>Does not restart the engine after it is stopped once.<br></li>
+<li>Does not control variable valve timing (V.V.T.).<br></li>
+<li>Does not operate the MIVEC in high-speed mode.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>PROBABLE CAUSES</h3><br><b></b><br><ul>
+<li>Failed camshaft position sensor<br></li>
+<li>Open&#0047;short circuit or harness damage in camshaft position sensor circuit or loose connector contact<br></li>
+<li>Failed engine-ECU<br></li>
+</ul>
+<hr width="90%"><a name="A2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>DIAGNOSIS PROCEDURE</h2><br></td>
+</tr>
+</table><a name="S1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 1. Voltage measurement at camshaft position sensor connector (SGC line).</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect the connector, and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Ignition switch: "ON"<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Check the voltage between the camshaft position sensor connector (SGC line) and body earth.<br><b></b><b>OK: 4.9 &#0045; 5.1 V<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 4.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 2.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 2. Check of short to power supply, short to earth and open circuit in SGC line between camshaft position sensor connector and engine-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 3.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the connector(s) or wiring harness.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S3"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 3. M.U.T.-III diagnosis code</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Reconfirmation of diagnosis code.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the diagnosis code set?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">Replace the engine-ECU.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Intermittent malfunction (Refer to GROUP 00 &#0045; How to Use Troubleshooting&#0047;Inspection Service Points &#0045; How to Cope with Intermittent Malfunctions <a href="javascript:JumpPage('M100101390056900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S4"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 4. Voltage measurement at camshaft position sensor connector (power supply line).</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect the connector, and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Ignition switch: "ON"<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Check the voltage between the camshaft position sensor connector (power supply line) and body earth.<br><b></b><b>OK: System voltage<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S6"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 6.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 5.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S5"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 5. Check of short circuit to earth and open circuit in power supply line between camshaft position sensor connector and battery.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 3.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the connector(s) or wiring harness.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S6"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 6. Resistance measurement at camshaft position sensor connector (DGND line).</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect the connector, and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Check the resistance between the camshaft position sensor connector (DGND line) and body earth.<br><b></b><b>OK: Continuity (2 &#0937; or less)<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S8"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 8.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S7"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 7.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S7"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 7. Check of open circuit and damage in DGND line between camshaft position sensor connector and engine-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 3.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the connector(s) or wiring harness.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S8"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 8. Perform output wave pattern measurement at camshaft position sensor connector (Using an oscilloscope).</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Use special tool test harness (MB991709) to connect connector, and measure at pick-up harness.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Engine: Idling<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Transmission: P range<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Check the voltage between the camshaft position sensor connector (SGC line) and body earth.<br><b></b><b>OK: Waveforms should be displayed on inspection procedure using an oscilloscope (Refer to <a href="javascript:JumpPage('M113115450362700ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>), its maximum value should be 4.8 V or more, and its minimum value should be 0.6 V or less. There must be no noise in the output wave pattern.<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 3.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#S9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 9.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="S9"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 9. Check of harness damage in power supply line between camshaft position sensor connector and battery.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#T0"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 10.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the connector(s) or wiring harness.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="T0"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 10. Check of harness damage in SGC line between camshaft position sensor connector and engine-ECU connector.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#T1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 11.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the connector(s) or wiring harness.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="T1"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 11. Check camshaft sensing cylinder.</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the check result normal?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><a href="#T2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 12.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the camshaft sensing cylinder.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table><a name="T2"></a><table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>STEP 12. M.U.T.-III diagnosis code</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Reconfirmation of diagnosis code.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h3>Q.
+		        Is the diagnosis code set?<br></h3>
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">Replace the camshaft position sensor.<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Intermittent malfunction (Refer to GROUP 00 &#0045; How to Use Troubleshooting&#0047;Inspection Service Points &#0045; How to Cope with Intermittent Malfunctions <a href="javascript:JumpPage('M100101390056900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></td>
+</tr>
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+</td>
+</tr>
+</table>
+<center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/13/html/M113175180125000ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 05:44:44 GMT -->
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/13/html/M213200350114900ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>THROTTLE VALVE OPENING
+ANGLE CONTROL AND IDLE SPEED CONTROL</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>THROTTLE VALVE OPENING
+ANGLE CONTROL AND IDLE SPEED CONTROL</h1><br><hr width="90%"><a name=""></a>Engine-ECU detects the amount of accelerator pedal depression (as per operator&#8217;s
+intention) through the accelerator pedal position sensor. Based on pre-set basic target opening
+angles it adds various compensations and controls the throttle valve opening angle according
+to the target opening angle.<br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/13/AK602236AU00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/13/AK602236AU00ENG.png"></a><br><hr width="90%"><a name=""></a><h2>While starting</h2><br>Engine-ECU adds various compensations to the target opening angle that are set based on
+the engine coolant temperature, so that the air volume is optimum for starting.<br><hr width="90%"><a name=""></a><h2>While idling</h2><br>Engine-ECU controls the throttle valve to achieve the target opening angle that are set
+based on the engine coolant temperature. In this way best idle operation is achieved when engine
+is cold and when it is hot. Also, the following compensations ensure optimum control.<br><hr width="90%"><a name=""></a><h2>While driving</h2><br>Compensations are made to the target opening angle set according to the accelerator pedal
+opening angle and engine speed to control the throttle valve opening angle.<br><hr width="90%"><a name=""></a><h2>List of main compensations for throttle valve opening angle and idle speed
+control</h2><br><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Compensations<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Content<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Stable idle compensation (immediately after start)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">In order to stabilize idle speed immediately after start, target
+opening angle is kept big and then gradually reduced. Compensation values are set based on the
+engine coolant temperature.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rotation speed feedback compensation (while idling)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">In case there is a difference between the target idle speed and actual
+engine speed, engine-ECU compensates the throttle valve opening angle based on that difference.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Atmospheric pressure compensation<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">At high altitudes atmospheric pressure is less and the intake air
+density is low. So, the target opening angle is compensated based on atmospheric pressure.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine coolant temperature compensation<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Compensation is made according to the engine coolant temperature.
+The lower the engine coolant temperature the greater the throttle valve opening angle.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Electric load compensation<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Throttle opening angle is compensated according to electric load.
+The greater the electric load, the greater the throttle valve opening angle.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Compensation when shift is in D range<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">When transmission is changed from P or N range to some other range,
+throttle valve opening angle is increased to prevent reduction in engine speed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Compensation when A/C is functioning<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Throttle opening angle is compensated according to functioning of
+A/C compressor. While A/C compressor is being driven, the throttle valve opening angle is increased.<br></td>
+</tr>
+</table>
+<hr width="90%"><a name=""></a><h2>Initialize control</h2><br>After ignition switch turns OFF, engine-ECU drives the throttle valve from fully closed
+position to fully open position and records the fully closed/open studied value of the throttle
+position sensor (main and sub) output signals. The recorded studied values are used as studied
+value compensation for compensating basic target opening angle when the engine is started next.<br><hr width="90%"><a name=""></a><h2>Engine protection control</h2><br>When the racing is continued during the vehicle stopped period (no-load period) for more
+than the specified time, the engine-ECU closes the throttle valve and restricts the engine speed
+to protect the engine.<br><center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/13/html/M213200350114900ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:50 GMT -->
+</html>

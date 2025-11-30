@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/36/html/M136200110001600ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>DIAGNOSTIC
+FUNCTION</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>DIAGNOSTIC
+FUNCTION</h1><br>Electric parking brake ECU has the following functions for easier system checks.<br><b></b><br><ul>
+<li>Diagnosis code set (Refer to <a href="javascript:JumpPage('M136200120001300ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Data list output (Refer to <a href="javascript:JumpPage('M136200160001100ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Actuator test (Refer to <a href="javascript:JumpPage('M136200170001800ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+<li>Freeze frame data output (Refer to <a href="#T1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br></li>
+</ul>All the above items can be diagnosed using M.U.T.-III.<br><hr width="90%"><a name="T1"></a><h2>CHECK OF FREEZE FRAME DATA</h2><br>The freeze frame data can be checked by using the M.U.T.-III.<br><a name=""></a><hr width="70%">When detecting fault and setting the diagnosis code, the ECU connected to CAN bus line
+obtains the data before the determination of the diagnosis code and the data when the diagnosis
+code is determined, and then stores the ECU status of that time. By analysing each data from
+M.U.T.-III, the troubleshooting can be performed more efficiently. The displayed items are as
+the table below.<br><br><b><b>Display item list</b></b><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Item No.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Item name<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Data item<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Unit<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Odometer<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Total driving distance after the diagnosis code is generated<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">km<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ignition cycle<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Number of times the ignition switch is turned ON or LOCK (OFF) after
+the past failure transition<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Number of counts is displayed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">3<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Tension 1 sensor monitor value<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">A value which tension 1 sensor monitors when a diagnosis code is
+set.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">V<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">4<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Tension 2 sensor monitor value<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">A value which tension 2 sensor monitors when a diagnosis code is
+set.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">V<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">5<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Target tension<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Tension of the parking brake cable (target tension), which the vehicle
+can be held at, when the diagnosis code is set.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">N<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">6<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control vehicle speed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vehicle speed (wheel speed) when the diagnosis code is generated<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">r&#0047;min<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">7<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Power supply voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Voltage of power supply when the diagnosis code is generated<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">V<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">8<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Parking brake status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Electric parking brake control when the diagnosis code is generated:
+Release&#0047;Lock&#0047;Lock -&#0062; Release&#0047;Release -&#0062; Lock&#0047;Undefined<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">9<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">EPB switch:LOCK 1 SW<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Electric parking brake switch (Lock switch 1) condition when the
+diagnosis code is generated: OFF&#0047;ON&#0047;Open&#0047;Short<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">10<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">EPB switch:LOCK 2 SW<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Electric parking brake switch (Lock switch 2) condition when the
+diagnosis code is generated: OFF&#0047;ON&#0047;Open&#0047;Short<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">11<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">EPB switch:RELEASE 1 SW<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Electric parking brake switch (Release switch 1) condition when the
+diagnosis code is generated: OFF&#0047;ON&#0047;Open&#0047;Short<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">12<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">EPB switch:RELEASE 2 SW<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Electric parking brake switch (Release switch 2) condition when the
+diagnosis code is generated: OFF&#0047;ON&#0047;Open&#0047;Short<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">13<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ignition switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ignition switch condition when the diagnosis code is generated: OFF&#0047;ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">14<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Acceleration pedal<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Accelerator pedal position sensor condition when the diagnosis code
+is generated: OFF&#0047;ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">15<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Brake switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Stop lamp switch condition when the diagnosis code is generated:
+OFF&#0047;ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">16<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Shift information<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Shift condition when the diagnosis code is generated: P&#0047;R&#0047;N&#0047;D<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+</table>
+<hr width="90%"><a name=""></a><h2>FAIL-SAFE FUNCTIONS</h2><br>When the electric parking brake ECU detects any malfunction in the system, the ECU will
+activate the brake warning lamp, the electric parking brake warning lamp and the electric parking
+brake switch indicator lamp to inform the driver that the electric parking brake is disabled.<br>In addition, the ECU displays a warning notice on the multi-information display in the
+combination meter.<br><a name=""></a><hr width="70%">
+<h3>Illumination condition of warning lamp, indicator lamp and multi information
+display in case of failure</h3><br><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Diagnosis code No.<br></b></td>
+<td valign="top" colspan="2" rowspan="NaN"><b>Inspection item<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Brake warning lamp<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Electric parking brake warning lamp<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Multi information display<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Electric parking brake switch indicator lamp<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1271<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Motor drive circuit<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1471<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Stop lamp switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1607<br></td>
+<td valign="top" colspan="2" rowspan="NaN">ECU failure<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1861<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Power supply low voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2250<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Actuator malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2251<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Tension sensor malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2252<br></td>
+<td valign="top" colspan="2" rowspan="NaN">&#0043;B voltage malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2253<br></td>
+<td valign="top" colspan="2" rowspan="NaN">EPB SW malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF &#0047;Flash (1 Hz)<sup>&#0042;1</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF &#0047;Flash (1 Hz)<sup>&#0042;1</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2254<br></td>
+<td valign="top" colspan="2" rowspan="NaN">IG SW malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0100<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Engine CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0101<br></td>
+<td valign="top" colspan="2" rowspan="NaN">T&#0047;M CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0121<br></td>
+<td valign="top" colspan="2" rowspan="NaN">ABS&#0047;ASC CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0141<br></td>
+<td valign="top" colspan="2" rowspan="NaN">ETACS CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0155<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Meter CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0401<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Engine (CAN message)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0402<br></td>
+<td valign="top" colspan="2" rowspan="NaN">T&#0047;M (CAN message)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0415<br></td>
+<td valign="top" colspan="2" rowspan="NaN">ABS&#0047;ASC (CAN message)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U1073<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Bus-off<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE SERVICE REQUIRED<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The power supply voltage is abnormal<sup>&#0042;2</sup>.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The system detects a continuous operation of the electric
+parking brake (to protect the electric motor from overheat) <sup>&#0042;3</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">PARKING BRAKE TEMPORARILY NOT AVAILABLE<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash (1 Hz)<br></td>
+</tr>
+</table>
+<table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff"><b></b><br><ul>
+<li><sup>&#0042;1</sup>: The lamp will flash if all of the four lock and release
+circuits for the electric parking brake switch are open.<br></li>
+<li><sup>&#0042;2</sup>: The power supply voltage is high or excessively low.<br></li>
+<li><sup>&#0042;3</sup>: If you operate the electric parking brake switch repeatedly
+in a short period of time, a warning screen will be displayed and the electric parking brake
+may be disabled temporarily. In this case, you have to wait for approx. one minute after the
+warning screen disappears until the switch can be operated.<br></li>
+</ul>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>Under lock, release and emergency brake<sup>&#0042;1</sup> in case
+of failure</h3><br><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Diagnosis code No.<br></b></td>
+<td valign="top" colspan="2" rowspan="NaN"><b>Inspection item<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Lock<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Release<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Emergency brake<sup>&#0042;1</sup><br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1271<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Motor drive circuit<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1471<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Stop lamp switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1607<br></td>
+<td valign="top" colspan="2" rowspan="NaN">ECU failure<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup>&#0047;Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup>&#0047;Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup>&#0047;Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C1861<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Power supply low voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2250<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Actuator malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<sup>&#0042;4</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2251<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Tension sensor malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<sup>&#0042;4</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2252<br></td>
+<td valign="top" colspan="2" rowspan="NaN">&#0043;B voltage malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">C2253<br></td>
+<td valign="top" colspan="2" rowspan="2">EPB SW malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<sup>&#0042;5</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="2">Enabled<sup></sup>&#0047;Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><sup>&#0042;6</sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">C2254<br></td>
+<td valign="top" colspan="2" rowspan="NaN">IG SW malfunction<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0100<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Engine CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0101<br></td>
+<td valign="top" colspan="2" rowspan="NaN">T&#0047;M CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0121<br></td>
+<td valign="top" colspan="2" rowspan="NaN">ABS&#0047;ASC CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup>&#0047;Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0141<br></td>
+<td valign="top" colspan="2" rowspan="NaN">ETACS CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0155<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Meter CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0401<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Engine (CAN message)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0402<br></td>
+<td valign="top" colspan="2" rowspan="NaN">T&#0047;M (CAN message)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U0415<br></td>
+<td valign="top" colspan="2" rowspan="NaN">ABS&#0047;ASC (CAN message)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup>&#0047;Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup>&#0047;Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">U1073<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Bus-off<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The power supply voltage is abnormal<sup>&#0042;2</sup>.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The system detects a continuous operation of the electric
+parking brake (to protect the electric motor from overheat) <sup>&#0042;3</sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Enabled<sup></sup><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Prohibited<br></td>
+</tr>
+</table>
+<table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff"><b></b><br><ul>
+<li><sup>&#0042;1</sup>: The emergency brake will be activated when the brake pedal
+depression is not enough to decelerate the vehicle.<br></li>
+<li><sup>&#0042;2</sup>: The power supply voltage is high or excessively low.<br></li>
+<li><sup>&#0042;3</sup>: If you operate the electric parking brake switch repeatedly
+in a short period of time, a warning screen will be displayed and the electric parking brake
+may be disabled temporarily. In this case, you have to wait for approx. one minute after the
+warning screen disappears until the switch can be operated.<br></li>
+<li><sup>&#0042;4</sup>: Release fully only once.<br></li>
+<li><sup>&#0042;5</sup>: The release circuit of the electric parking brake switch
+fails.<br></li>
+<li><sup>&#0042;6</sup>: The lock circuit of the electric parking brake switch fails.<br></li>
+</ul>
+</td>
+</tr>
+</table>
+<hr width="90%"><a name=""></a><h2>HOW TO READ DIAGNOSIS CODE</h2><br>Refer to GROUP 00 &#0045; How to Use Troubleshooting and Inspection Service Points <a href="javascript:JumpPage('M100101340122200ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br><hr width="90%"><a name=""></a><h2>HOW TO ERASE DIAGNOSIS CODE</h2><br>Refer to GROUP 00 &#0045; How to Use Troubleshooting and Inspection Service Points <a href="javascript:JumpPage('M100101340122200ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.<br><center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/36/html/M136200110001600ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:11 GMT -->
+</html>

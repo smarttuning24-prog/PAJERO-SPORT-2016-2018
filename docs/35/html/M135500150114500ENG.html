@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/35/html/M135500150114500ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>DATA LIST REFERENCE TABLE</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+<font color="red"><b>MSB is released for this page as follows:</b></font>
+<table border="1" style="border-style:solid;border-width:1px;border-collapse:collapse;border-color:black;background:#FFFF80;">
+<tr><th>Release Date</th><th>Subject</th><th>MSB No.</th></tr>
+<tr><td>2016-03-21</td><td>Change of the name in the service data for ASTC</td><td><a target="_blank" href="http://mmc-manuals.ru/msb/BASE/004/2016/MSB-16EXL35-001/E/MSB-16EXL35-001.pdf">MSB-16EXL35-001</a></td></tr>
+</table>
+<h1>DATA LIST REFERENCE TABLE</h1><br>The following items can be read by the M.U.T.-III from the ASTC-ECU input data.<br><hr width="90%"><a name=""></a><a name=""></a><hr width="70%">
+<h3>The system is normal.</h3><br><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Item No.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Check item<br></b></td>
+<td valign="top" colspan="2" rowspan="NaN"><b>Check condition<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Normal condition<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">01<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FL wheel speed sensor<br></td>
+<td valign="top" colspan="2" rowspan="4">Perform a test run of the vehicle.<br></td>
+<td valign="top" colspan="NaN" rowspan="4">The speedometer display and the M.U.T.-III display almost agree with each other (During stop: approximately 0.7km&#0047;h).<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">02<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FR wheel speed sensor<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">03<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RL wheel speed sensor<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">04<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RR wheel speed sensor<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">05<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Longitudinal G sensor (&#0043;: deceleration, -: acceleration)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Vehicle stopped (level)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-0.04 to 0.04 G<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-1 to 1 G<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">06<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Lateral G sensor (&#0043;: left turn, -: right turn)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Vehicle stopped (level)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-0.11 to 0.11 G<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-1 to 1 G<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="3">07<br></td>
+<td valign="top" colspan="NaN" rowspan="3">Steering angle (&#0043;: left turn, -: right turn)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Vehicle stopped (the steering wheel is in the neutral position)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-6 to 6 deg<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="2">Running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Nearly the same as the steering wheel operation angle &#0060;-720 to 720 deg (ASC-ECU normal detection value)&#0062;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Nearly the same as the steering wheel operation angle &#0060;-850 to 850 deg (Sensor normal value as a single unit)&#0062;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">08<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Yaw rate sensor (&#0043;: left turn, -: right turn)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Vehicle stopped (level)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-3.6 to 3.6 deg&#0047;s<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Running<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-100 to 100 deg&#0047;s<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">09<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Master cylinder pressure (&#0043;: pressure increase, -: pressure decrease)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The brake pedal is depressed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Increases by the amount of the brake pedal depression.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">The brake pedal is released.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-3 to 3 MPa<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">10<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine Speed<br></td>
+<td valign="top" colspan="2" rowspan="3">When the accelerator pedal is depressed (engine started)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">The tachometer display and the M.U.T.-III display almost agree with each other.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">11<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine torque<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Displays the engine torque.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">12<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">APS<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Displays the accelerator pedal opening angle.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">13<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Allow A.S.C. torque request<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Allow<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">14<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Target gear<br></td>
+<td valign="top" colspan="2" rowspan="2">When the selector lever is operated<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Displays the selector lever position.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">15<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Actual gear<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">16<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Longitudinal G sensor (Raw value)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The difference between the neutral position that was input to the ASTC-ECU before the G and yaw rate sensor calibration and the neutral position after the calibration.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-0.23 to 0.23 G<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">17<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Lateral G sensor (Raw value)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The difference between the neutral position that was input to the ASTC-ECU before the G and yaw rate sensor calibration and the neutral position after the calibration.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-0.23 to 0.23 G<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">18<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Steering angle (Raw value)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The difference between the neutral position that was sent to the ASTC-ECU before the steering wheel sensor calibration and the neutral position after the calibration.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-10 to 10 deg<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">19<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Yaw rate sensor (Raw value)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The difference between the neutral position that was input to the ASTC-ECU before the G and yaw rate sensor calibration and the neutral position after the calibration.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-5.0 to 5.0 deg&#0047;s<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">20<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">M&#0047;C pressure (Raw value)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The difference between the neutral position that was input to the ASTC-ECU before the master cylinder pressure sensor calibration and the neutral position after the calibration.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">-10 to 10 bar<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="5">21<br></td>
+<td valign="top" colspan="NaN" rowspan="5">Transfer state (SS4&#0047;ES4)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Transfer position: 2WD<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">2WD<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Transfer position: 4WD<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4WD<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Transfer position: Shifting<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Shifting<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Transfer position: 4WD lock <br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4WD C&#0047;D lock<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Transfer position: Centre differential locking&#0047; unlocking<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C&#0047;D running<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="3">22<br></td>
+<td valign="top" colspan="NaN" rowspan="3">Reduction gear state (SS4&#0047;ES4)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Transfer selector lever position: 2H, 4H&#0047;4HLc<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">High gear<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Transfer selector lever position: 4LLc<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Low gear<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Transfer selector lever position: Shifting<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Shifting<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="4">23<br></td>
+<td valign="top" colspan="NaN" rowspan="4">Transfer SW position (SS4&#0047;ES4)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Drive mode-selector: 2H<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">2H<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Drive mode-selector: 4H<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4H<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Drive mode-selector: 4HLc<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4HLc<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Drive mode-selector: 4LLc<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4LLc<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">24<br></td>
+<td valign="top" colspan="NaN" rowspan="2">R&#0047;D lock indicator flashing Req.<br></td>
+<td valign="top" colspan="2" rowspan="NaN">No operating<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Rear differential lock operating<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">25<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Stop lamp switch (ETACS)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The brake pedal is released.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">The brake pedal is depressed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">26<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Odometer<br></td>
+<td valign="top" colspan="2" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Odometer displayed value and M.U.T.-III displayed value agree with each other.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">27<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Off-road control changing SW<br></td>
+<td valign="top" colspan="2" rowspan="NaN">When the off-road mode selector is not pushed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">When the off-road mode selector is pushed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">28<br></td>
+<td valign="top" colspan="NaN" rowspan="2">HDC SW<br></td>
+<td valign="top" colspan="2" rowspan="NaN">When the hill descent control switch is not pushed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">When the hill descent control switch is pushed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="3">29<br></td>
+<td valign="top" colspan="NaN" rowspan="3">Rear diff lock state (SS4&#0047;ES4)<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Rear differential lock: Unlock<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Unlock<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Rear differential lock: Lock<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Lock<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Rear differential locking&#0047; unlocking<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Running<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">30<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Parking brake switch<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Release the parking brake.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Disengage<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Apply the parking brake.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engage<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">31<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Stop lamp status<br></td>
+<td valign="top" colspan="2" rowspan="NaN">The brake pedal is released.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">The brake pedal is depressed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">32<br></td>
+<td valign="top" colspan="NaN" rowspan="2">FCM off switch<br></td>
+<td valign="top" colspan="2" rowspan="NaN">When the Forward collision mitigation system (FCM) and unintended acceleration mitigation system ON&#0047;OFF switch is not pushed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">When the Forward collision mitigation system (FCM) and unintended acceleration mitigation system ON&#0047;OFF switch is pushed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">33<br></td>
+<td valign="top" colspan="NaN" rowspan="2">A.S.C. off switch<br></td>
+<td valign="top" colspan="2" rowspan="NaN">When the ASC OFF switch is not pushed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">When the ASC OFF switch is pushed.<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+</table>
+<table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">While ASTC-ECU is disabled by the diagnostic function, the M.U.T.-III displayed data is different from the actual measurement.<br></td>
+</tr>
+</table>
+<center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/35/html/M135500150114500ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:09 GMT -->
+</html>

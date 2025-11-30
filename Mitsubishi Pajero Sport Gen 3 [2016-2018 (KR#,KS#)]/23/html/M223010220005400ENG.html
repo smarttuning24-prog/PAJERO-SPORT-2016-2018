@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/23/html/M223010220005400ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>DESCRIPTION OF CONSTRUCTION AND OPERATION</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+<font color="red"><b>MSB is released for this page as follows:</b></font>
+<table border="1" style="border-style:solid;border-width:1px;border-collapse:collapse;border-color:black;background:#FFFF80;">
+<tr><th>Release Date</th><th>Subject</th><th>MSB No.</th></tr>
+<tr><td>2020-10-28</td><td>Correction of the description of DIAGNOSIS CODE TABLE about 4WD system</td><td><a target="_blank" href="http://mmc-manuals.ru/msb/BASE/004/2020/MSB-20EXML22_23-501/E/MSB-20EXML22_23-501.pdf">MSB-20EXML22_23-501</a></td></tr>
+</table>
+<h1>DESCRIPTION OF CONSTRUCTION AND OPERATION</h1><br><hr width="90%"><a name=""></a>The operations and functions are the same as these for conventional models.<br><br><b><b>MAIN STRUCTURAL PARTS</b></b><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>NAME OF STRUCTURAL PARTS<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>OUTLINE OF FUNCTIONS<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Freewheel solenoid<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Freewheel solenoid controls to engage&#0047;disengage the freewheel mechanism.<br>F&#0047;W: Detects the freewheel engage&#0047;disengage status.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer actuator controls the transfer position.<br>TL1, TL2, TL3, 4WD: Detects the transfer position (2H, 4H, 4HLc, 4LLc)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">High-Low limit switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">High-Low limit switch controls High&#0047;Low gear position.<br>HL1, HL2: Detects the High&#0047;Low gear position (4HLc, 4LLc)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock solenoid<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock solenoid controls to Lock&#0047;Unlock the rear differential.<br>DSW: Detects the rear differential lock Lock&#0047;Unlock status.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Drive mode-selector<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Detects drive mode-selector position.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Detects rear differential lock switch position.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer-ECU<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>Sends control signals to the various actuators based on signals from the various switches and sensors.<br></li>
+<li>Causes the indicator displays inside the multi information display in order to indicate the control position.<br></li>
+<li>Activates the 2WD&#0047;4WD operation warning display to warn to the driver that there is a problem with the transfer system.<br></li>
+<li>Activates the rear differential lock warning display to warn to the driver that there is a problem with the rear differential lock system.<br></li>
+</ul><br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>POWER FLOW</h3><br>The super select 4WD-II is composed of the 2WD&#0047;4WD changeover mechanism, high&#0047;low changeover mechanism and centre differential as shown in the figure. With operating those, the drive torque transmission method can be selected.<br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE01639AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE01639AB00ENG.png"></a><br><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>High-low switching mechanisms</h2><br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE02326AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE02326AB00ENG.png"></a><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">A helical gear planetary gear, which contributes to a tranquillity, is used in high-low switching mechanism in order to realise compactness and weight reduction.<br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">The input shaft and the planetary sun gear form one component. The planetary pinion gear is incorporated around the planetary sun gear. The planetary pinion gear is engaged with the planetary ring gear, and the pinion shaft of the planetary pinion gear is secured to the planetary carrier.<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>Centre differential (Torsen&#0174;
+LSD)</h2><br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE02326AC00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE02326AC00ENG.png"></a><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">A Torsen&#0174;
+LSD is used as the centre differential. Its torque distribution ratio is 40&#0037;
+(for front axle) and 60&#0037;
+(for rear axle). Then the system redistributes the driving force according to driving conditions and the driver&#8217;s operation to maintain a most suitable ratio. Due to this, cornering stability has been improved as well as driving stability, which is characteristic of 4WD, is maintained. This unit also contributes to compactness and light weight.<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>TRANSFER-ECU</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%" valign="top"><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE02610AB00ENG.png')"><img width="250" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE02610AB00ENG.png"></a><br></td>
+<td width="65%" valign="top">The system switches the transfer according to the drive mode-selector and the vehicle conditions. Therefore, the transfer-ECU controls the super select 4WD-II, the rear differential lock system (lock&#0047;unlock).<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>CONTROL UNIT</h3><br>The transfer-ECU has a hybrid-type 48-pin connector. The terminal layout is as follows.<br><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE02308AD00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACE02308AD00ENG.png"></a><br><table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Terminal No.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Symbol<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Item<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TM1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer motor<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TM2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer motor<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">3 - 4<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">5<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">HM2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">High-Low motor<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">6<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">HM1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">High-Low motor<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">7- 15<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">16<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4WD<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4WD Detection switch<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">17<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">2H<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Drive mode-selector (Position: 2H)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">18<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4H<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Drive mode-selector (Position: 4H)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">19<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4HLC<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Drive mode-selector (Position: 4HLc)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">20<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4LLC<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Drive mode-selector (Position: 4LLc)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">21<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">DON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock switch (ON) &#0060;Vehicles with rear differential lock system&#0062;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">22<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">DOFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock switch (OFF) &#0060;Vehicles with rear differential lock system&#0062;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">23<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">DSW<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock detection switch &#0060;Vehicles with rear differential lock system&#0062;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">24<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">F&#0047;W<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Freewheel engage switch<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">31<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">GND1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Earth<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">32<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0043;B1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Power supply<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">33<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">DSL&#0043;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock solenoid &#0060;Vehicles with rear differential lock system&#0062;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">34<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">DSL-<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock solenoid &#0060;Vehicles with rear differential lock system&#0062;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">35<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FSL-<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Freewheel solenoid<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">36<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">FSL&#0043;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Freewheel solenoid<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">37<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">IG<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ignition switch<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">38<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">HL1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">High-Low limit switch 1<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">39<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">HL2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">High-Low limit switch 2<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">40 - 47<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">48<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TL1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer limit switch 1<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">49<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TL2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer limit switch 2<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">50<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">TL3<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Transfer limit switch 3<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">51 - 54<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#0045;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">55<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">CANL<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">CAN&#0095;L<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">56<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">CANH<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">CAN&#0095;H<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>Fail-safe function</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">If any of the switches, sensors, transfer actuators and transfer-ECU fails, a fail-safe function will be activated to protect the passengers and the vehicle.<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>DIAGNOSIS FUNCTION</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">The following function have been provided to make inspection of the super select 4WD-II system and rear differential lock system easier.<br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><ul>
+<li>Diagnosis code output<br></li>
+<li>Service data output<br></li>
+<li>Actuator test<br></li>
+</ul>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>DIAGNOSIS CODES</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">When diagnosis codes are set, they are stored in the ECU. The diagnosis codes stored in the ECU (EEPROM) will not be erased even when the battery is OFF. Furthermore, the diagnosis codes can be read using the M.U.T.-III.<br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1">
+<tr>
+<td valign="top" colspan="2" rowspan="NaN"><b>ITEM<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>JUDGEMENT CONDITION<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>FAIL-SAFE<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>DIAGNOSIS CODE No.<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Mode switch<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Open circuit&#0047;Short circuit&#0047;Malfunction of switch<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Problem with input signal from mode switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control start forbidden (prior to actuator operation)<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C1403<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Disabled after complete control (while the actuator is being operated)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Power supply voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Voltage drop<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Power supply voltage 9.7 V or lower<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control cancelled<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1422<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Overvoltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Power supply voltage 16.3 V or higher<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control cancelled<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1423<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Drive mode-selector<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Open circuit&#0047;Short circuit&#0047;Malfunction of switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>Transfer selection does not complete while driving.<br></li>
+<li>Changeover of the transfer is not completed when the vehicle is stopped.<br></li>
+<li>Input signal from the drive mode-selector is always set on a random basis.<br></li>
+</ul><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control start forbidden<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1430<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Short-circuit in shift actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="5">Open circuit&#0047;Short circuit&#0047;Malfunction of actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 4.9 V or higher<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control start forbidden<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1431<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Short-circuit in shift actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 3.8 V or higher<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Control start forbidden<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C1432<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 0.2 V or higher<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Short-circuit in shift actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Current to the actuator: 1.0 A or higher<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control cancelled<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1433<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Open-circuit in shift actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Current to the actuator: 100 mA or lower<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control cancelled<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1434<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Short-circuit in shift actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Open circuit&#0047;Short circuit&#0047;Malfunction of actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator offset supply voltage 3.6 V or higher<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Control start forbidden<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C1435<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator offset supply voltage 0.1 V or lower<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Freewheel engage switch<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Open circuit&#0047;Short circuit&#0047;Malfunction of switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>Vehicle speed 3 km&#0047;h higher<br></li>
+<li>Freewheel engage switch is OFF<br></li>
+</ul><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped (when the transfer is switched completely)<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C1436<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>Vehicle speed 3 km&#0047;h higher<br></li>
+<li>Freewheel engage switch is ON<br></li>
+</ul><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Hold (while the transfer is switched)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="4">Freewheel actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="4">Open circuit&#0047;Short circuit<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 4.9 V higher<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1437<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 3.7 V lower<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C1438<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 1.1 V lower<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">When an IPD overcurrent is detected<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1439<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="6">Rear differential lock actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="6">Open circuit&#0047;Short circuit<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 4.9 V higher<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No treatment<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C143A<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 4.7 V lower<br></td>
+<td valign="top" colspan="NaN" rowspan="2">No treatment<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C143B<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Actuator power supply voltage 1.1 V lower<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Current: 8.0 A higher<br></td>
+<td valign="top" colspan="NaN" rowspan="2">No treatment<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C143C<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Current: 4.0 A or higher<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Current: 0.3 A lower<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No treatment<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C143D<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Rear differential lock actuator<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Current monitor offset supply voltage is 1.6 V or higher, or current monitor offset supply voltage is 0.8 V or lower <br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No treatment<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C143E<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Interlock system abnormality<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">CAN signal of Interlock from A&#0047;T is fail<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">High&#0047;Low control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C143F<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Rear differential lock switch<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Short circuit&#0047;Malfunction of switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock switch ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No treatment<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C1464<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock switch ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No treatment<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">Rear differential lock switch<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Short circuit&#0047;Malfunction of switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>Vehicle speed 3 km&#0047;h higher<br></li>
+<li>Rear differential lock switch is ON<br></li>
+</ul><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No treatment<br></td>
+<td valign="top" colspan="NaN" rowspan="2">C1469<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b></b><br><ul>
+<li>Vehicle speed 3 km&#0047;h higher<br></li>
+<li>Rear differential lock switch is OFF<br></li>
+</ul><br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">No treatment<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Malfunction of transfer-ECU<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Malfunction of ECU detected<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control start forbidden<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">C1607<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="3" rowspan="NaN">Engine CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U0100<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="3" rowspan="NaN">T&#0047;M CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U0101<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="3" rowspan="NaN">ABS&#0047;ASC CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U0121<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="4" rowspan="NaN">ETACS CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U0141<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="4" rowspan="NaN">Meter CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U0155<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="4" rowspan="NaN">AS&#0038;G CAN timeout<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U1004<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="3" rowspan="NaN">Engine (CANmessage)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U1120<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="3" rowspan="NaN">T&#0047;M (CANmessage)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U1121<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="3" rowspan="NaN">ASC&#0047;TCL&#0047;ABS (CANmessage)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Control stopped<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U1122<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="4" rowspan="NaN">Coding not completed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U1195<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="4" rowspan="NaN">Coding data unavailable<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">U1197<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>SERVICE DATA</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">Using M.U.T.-III, the input data and output data to the transfer ECU can be read.<br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>SERVICE DATA NO.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>ITEM<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>DISPLAY<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Vehicle speed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Equivalent to the speed of a meter display.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Wheel speed (FL)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by vehicle speed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">3<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Wheel speed (FR)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by vehicle speed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">4<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Wheel speed (RL)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by vehicle speed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">5<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Wheel speed (RR)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by vehicle speed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">6<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Front propeller shaft speed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by vehicle speed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">7<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear propeller shaft speed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by vehicle speed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">8<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear wheel acceleration<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by vehicle speed.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">9<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Power voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">System voltage<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">10<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F position<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">2H&#0047;4H&#0047;4HLc&#0047;4LLc<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">11<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine torque<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by operation.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">12<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Engine speed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes by operation.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="2">13<br></td>
+<td valign="top" colspan="NaN" rowspan="2">Accelerator position<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">0&#0037;<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Opening angle value increases in response to the depression amount of the accelerator pedal.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">14<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor 1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">15<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor 2, H&#0047;L motor 2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">16<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor 1 relay<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">17<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor 2, H&#0047;L motor 2 relay<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">18<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">H&#0047;L motor 1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">19<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">H&#0047;L motor 1 relay<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">20<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">21<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor PWM output<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">22<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor current<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">MAX 12.5 A<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">23<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F select switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">2H&#0047;4H&#0047;4HLc&#0047;4LLc<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">24<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff clutch voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">25<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff clutch PWM output(RW&#0043;)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Data changes.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">26<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff clutch output (RW-)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">27<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff clutch current<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">MAX 7 A<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">28<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F limit switch 1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">29<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F limit switch 2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">30<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F limit switch 3<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">31<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">H&#0047;L limit switch 1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">32<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">H&#0047;L limit switch 2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">33<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Center diff lock position switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">34<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F select switch (2H)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">35<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F select switch (4HLc)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">36<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F select switch (4LLc)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">37<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F select switch (4H)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">38<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff lock select SW<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Unlock&#0047;Lock<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">39<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff lock select SW (Lock)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">40<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff lock select SW (Free)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">41<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff lock position switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Unlock&#0047;Lock<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">42<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Ignition switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">43<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">F&#0047;W voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">44<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">F&#0047;W position switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Disengage&#0047;Engage<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">45<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">F&#0047;W solenoid output (&#0043;)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">46<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">F&#0047;W solenoid output (-)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">47<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">F&#0047;W IPD status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">49<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ABS&#0047;A.S.C. operation status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not operating&#0047;Operating<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">51<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">A&#0047;T neutral status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Neutral&#0047;Not neutral<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">52<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">M&#0047;T clutch status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">53<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">AWC system fail warning lamp<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not flashing&#0047;Flashing<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">54<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff lock fail warning lamp<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not flashing&#0047;Flashing<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">55<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Indicator (Front tyre)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not flashing&#0047;Flashing<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">56<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Indicator (Rear tyre)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not flashing&#0047;Flashing<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">57<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Indicator (Center diff lock)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not flashing&#0047;Flashing<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">58<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Indicator (Low gear)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not flashing&#0047;Flashing<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">59<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Indicator (Rear diff lock)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not flashing&#0047;Flashing<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">60<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Self holding output<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">61<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">VCC voltage monitor 1<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">62<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">VCC voltage monitor 2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">63<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor monitor voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">64<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F motor monitor voltage offset<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">65<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff clutch monitor voltage<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">66<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">R&#0047;D clutch monitor volt. offset<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not inspection item<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">67<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ROM fail flag<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">68<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">RAM fail flag<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">69<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (T&#0047;F select switch)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">2H&#0047;4H&#0047;4HLc&#0047;4LLc<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">70<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (T&#0047;F select switch flash)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">71<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (AWC system fail)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">72<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (H&#0047;L select fail)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">73<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (Interrupt T&#0047;F select)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">74<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (Re-interrupt T&#0047;F select)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">75<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (N range operation request)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">76<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (Clutch operation request) &#0060;M&#0047;T&#0062;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">77<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Meter display (Inhibited rear differential lock switch)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">78<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Buzzer (Inhibited rear differential lock switch)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON&#0047;OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">79<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">A&#0047;T input shaft control status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not active&#0047;Active&#0047;Ready&#0047;Fail<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">80<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">T&#0047;F 4H&#0047;L select request<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not request&#0047;Request<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">81<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">H&#0047;L select control status<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Not select mode&#0047;<br>Select mode (1)&#0047;<br>Retry mode&#0047;<br>Prohibit mode&#0047;<br>Select mode (2)&#0047;<br>Select mode (3)&#0047;<br>Select mode (4)&#0047;<br>Stop mode (15 min)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">82<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">A&#0047;T output shaft speed<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">r&#0047;min<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>ACTUATOR TEST</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">The actuators can be force-driven by sending signals from the M.U.T.-III to the transfer-ECU.<br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>ITEM NO.<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>CORRESPONDING ACTUATOR<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>TEST DETAILS<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>TEST CONDITIONS<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="3">1<br></td>
+<td valign="top" colspan="NaN" rowspan="3">T&#0047;F Drive request<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Select mode (2H, 4H, 4HLc, 4LLc).<br></td>
+<td valign="top" colspan="NaN" rowspan="4"><b></b><br><ul>
+<li>Ignition switch: ON<br></li>
+<li>The selector lever to the N position<br></li>
+<li>Engine: 0 r&#0047;min <br></li>
+<li>Vehicle speed: 0 km&#0047;h (vehicle stopped) <br></li>
+</ul><br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The motor inside the shift actuator is run in the forward direction.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">The motor inside the shift actuator is run in the reverse direction.<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">2<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear diff drive request<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Activate the rear differential lock solenoid.<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>4WD INDICATOR DISPLAY</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">To check the changeover status, the indicator displays have been provided inside the combination meter. The displays illuminate with such a manner that the 2WD, 4WD, and centre differential lock status can be discriminated. Also, the displays flash when the changeover is being made.<br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">The two rear wheel displays illuminate when 2WD is selected, all the four wheel displays illuminate in green when 4WD is selected, and the front wheel lamps flash during changeover. When the centre differential is locked, the centre lamp flashes or illuminates in amber.<br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACF02287AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACF02287AB00ENG.png"></a><br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACF02288AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACF02288AB00ENG.png"></a><br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1">
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Transfer position<br></td>
+<td valign="top" colspan="2" rowspan="NaN">2H<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4H<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4HLc<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4LLc<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4HLc<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4H<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">2H<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">4HLc<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">2H<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="4">Indicator display<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Front wheel indicator display<br></td>
+<td valign="top" colspan="2" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Illuminate<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Illuminate<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="3" rowspan="NaN">Illuminate<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Illuminate<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear wheel indicator display<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="5" rowspan="NaN">Illuminate<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Illuminate<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="9" rowspan="NaN">Illuminate<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">centre differential lock indicator display<br></td>
+<td valign="top" colspan="4" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="5" rowspan="NaN">ON<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="3" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">4L indicator display<br></td>
+<td valign="top" colspan="7" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="2" rowspan="NaN">Illuminate<br></td>
+<td valign="top" colspan="9" rowspan="NaN">OFF<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="2" rowspan="NaN">Ignition switch<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="17" rowspan="NaN">ON<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>REAR DIFFERENTIAL LOCK INDICATOR LAMP&#0047;DISPLAY</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">The rear differential lock indicator lamp&#0047;display indicates the currently selected mode of operation of the rear differential lock system. <br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACF02289AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACF02289AB00ENG.png"></a><br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<table border="1">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock switch position<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Unlock<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">&#8594;<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Lock<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock indicator lamp<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Rear differential lock indicator display<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">OFF<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flash<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">ON<br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<table class="fontttl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">
+<h2>Transfer control</h2><br></td>
+</tr>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top">The transfer control is electrically actuated. You can select any mode (2H&#0047;4H&#0047;4HLc&#0047;4LLc) by rotating the drive mode-selector, which is located on the floor console, when the ignition switch is turned on. The transfer-ECU controls the transfer actuator according to the electric signal sent by the drive mode-selector. Then the transfer actuator actuates the mode switching mechanism in the transfer.<br></td>
+</tr>
+</table>
+<table class="fonttbl5" border="0" width="90%">
+<tr>
+<td width="35%">
+</td>
+<td width="65%" valign="top"><b>CONSTRUCTION DIAGRAM</b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACF02272AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/23/ACF02272AB00ENG.png"></a><br></td>
+</tr>
+</table>
+<center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/23/html/M223010220005400ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:51 GMT -->
+</html>

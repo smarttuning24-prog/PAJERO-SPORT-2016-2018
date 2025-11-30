@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/42/html/M142963140012400ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Inspection Procedure 20: Vehicle power cannot be turned "OFF".</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>Inspection Procedure 20: Vehicle power cannot be turned "OFF".</h1><br><hr width="90%"><a name=""></a><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#ffaaaa" width="60"><b>caution</b></td>
+<td bgcolor="#ffaaaa">Before replacing the ECU, ensure that the power supply circuit, the earth circuit and the communication circuit are normal.<br></td>
+</tr>
+</table>
+<hr width="90%"><a name=""></a><a name=""></a><hr width="70%">
+<h3>COMMENTS ON TROUBLE SYMPTOM</h3><br>If the power supply cannot be shut down by pressing the engine switch, the system may not receive any correct vehicle speed information via CAN or the IG1 power supply system may be defective.<br><a name=""></a><hr width="70%">
+<h3>PROBABLE CAUSES</h3><br><b></b><br><ul>
+<li>Incorrect vehicle speed information (CAN signal)<br></li>
+<li>Damaged wiring harness or connector (short to earth or short to power supply in IG1 line)<br></li>
+<li>Malfunction of IG1 relay<br></li>
+<li>Malfunction of engine switch<br></li>
+<li>Malfunction of KOS&#0038;OSS-ECU<br></li>
+</ul>
+<hr width="90%"><a name=""></a><h2>DIAGNOSIS PROCEDURE</h2><br><a name="A1"></a><h2>STEP 1. M.U.T.-III CAN bus diagnostics</h2><br>Use the M.U.T.-III to diagnose the CAN bus lines.<br><h3>Q.
+            Is the check result normal?<br></h3><a href="#A2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 2.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the CAN bus line (Refer to GROUP 54C &#0045; Troubleshooting <a href="javascript:JumpPage('M154830020331100ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><br><a name="A2"></a><h2>STEP 2. Check the M.U.T.-III Diagnosis code for other systems</h2><br>Check whether the engine-ECU sets a diagnosis code.<br><h3>Q.
+            Is the diagnosis code set?<br></h3><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">Diagnose the engine-ECU (GROUP 13B &#0045; Troubleshooting <a href="javascript:JumpPage('M113135230216700ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a> &#0060;6B3&#0062; or GROUP 13C &#0045; Troubleshooting <a href="javascript:JumpPage('M113300400131800ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a> &#0060;4N1&#0062;).<br><br><a href="#A3"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 3.<br><br><a name="A3"></a><h2>STEP 3. M.U.T.-III other system data list</h2><br>Check the engine-ECU data list.<br>Item No.4: Vehicle speed signal (Refer to GROUP 13B &#0045; Data list reference table <a href="javascript:JumpPage('M113115200589300ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a> &#0060;6B3&#0062; or GROUP 13C &#0045; Data list reference table <a href="javascript:JumpPage('M113300420133400ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a> &#0060;4N1&#0062;).<br><h3>Q.
+            Is the check result normal?<br></h3><a href="#A4"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 4.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Perform troubleshooting for engine-ECU (Refer to GROUP 13B &#0045; Troubleshooting <a href="javascript:JumpPage('M113135230216700ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a> &#0060;6B3&#0062; or GROUP 13C &#0045; Troubleshooting <a href="javascript:JumpPage('M113300400131800ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a> &#0060;4N1&#0062;).<br><br><a name="A4"></a><h2>STEP 4. IG1 relay check</h2><br>Check that the IG1 relay works normally (Refer to <a href="javascript:JumpPage('M142962990005800ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><h3>Q.
+            Is the check result normal?<br></h3><a href="#A5"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 5.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the IG1 relay.<br><br><a name="A5"></a><h2>STEP 5. Voltage measurement at IG1 relay connector (IG1 terminal)</h2><br><table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Remove the IG1 relay , and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the engine switch from "LOCK" (OFF) position to "ON" position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Measure the voltage between the IG1 relay connector (IG1 terminal) and body earth.<br><b></b><b>OK: System voltage<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Turn the engine switch from "ON" position to "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(5)Measure the voltage between the IG1 relay connector (IG1 terminal) and body earth.<br><b></b><b>OK: 1 V or less<br></b></td>
+</table>
+<h3>Q.
+            Is the check result normal?<br></h3><a href="#A7"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 7.<br><br><a href="#A6"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 6.<br><br><a name="A6"></a><h2>STEP 6. Check of short to power supply, short to earth or open circuit in IG1 line between the KOS&#0038;OSS-ECU connector and the IG1 relay connector</h2><br><h3>Q.
+            Is the check result normal?<br></h3><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">Intermittent malfunction (Refer to GROUP 00 &#0045; How to Use Troubleshooting&#0047;Inspection Service Points &#0045; How to Cope with Intermittent Malfunction <a href="javascript:JumpPage('M100101390056900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the connector(s) or wiring harness.<br><br><a name="A7"></a><h2>STEP 7. Check of open circuit in earth line between the IG1 relay connector and the body earth</h2><br><h3>Q.
+            Is the check result normal?<br></h3><a href="#A8"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 8.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the wiring harness.<br><br><a name="A8"></a><h2>STEP 8. Voltage measurement at IG1 relay connector (IG1 line and power supply line)</h2><br><table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Measure the voltage between the IG1 relay connector (power supply line) and the body earth.<br><b></b><b>OK: System voltage<br></b></td>
+</table>
+<h3>Q.
+            Is the check result normal?<br></h3><a href="#B0"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 10.<br><br><a href="#A9"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png"></a>Go to Step 9.<br><br><a name="A9"></a><h2>STEP 9. Check of short to power supply, short to earth or open circuit in power supply line between the fusible link connector and the IG1 relay connector</h2><br><h3>Q.
+            Is the check result normal?<br></h3><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">Intermittent malfunction (Refer to GROUP 00 &#0045; How to Use Troubleshooting&#0047;Inspection Service Points &#0045; How to Cope with Intermittent Malfunction <a href="javascript:JumpPage('M100101390056900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the connector(s) or wiring harness.<br><br><a name="B0"></a><h2>STEP 10. Voltage measurement at ETACS-ECU connector (IG1 line)</h2><br><table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(1)Disconnect the connector, and measure at the wiring harness side.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(2)Turn the engine switch from "LOCK" (OFF) position to "ON" position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(3)Measure the voltage between the ETACS-ECU connector (IG1 line) and the body earth.<br><b></b><b>OK: System voltage<br></b></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(4)Turn the engine switch from "ON" position to "LOCK" (OFF) position.<br></td>
+</table>
+<table class="fontmain5" border="0" width="90%">
+<td width="35%">
+</td>
+<td width="65%">(5)Measure the voltage between the ETACS-ECU connector (IG1 line) and the body earth.<br><b></b><b>OK: 1 V or less<br></b></td>
+</table>
+<h3>Q.
+            Is the check result normal?<br></h3><a href="#B1"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 11.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Repair the wiring harness, IG1 line between the ETACS-ECU connector and the fusible link.<br><br><a name="B1"></a><h2>STEP 11. Engine switch check</h2><br>Continuity check of engine switch (Refer to <a href="javascript:JumpPage('M142962570003000ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><h3>Q.
+            Is the check result normal?<br></h3><a href="#B2"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png"></a>Go to Step 12.<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the engine switch (Refer to <a href="javascript:JumpPage('M142962560011800ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><br><a name="B2"></a><h2>STEP 12. Check of the troubles</h2><br>Check whether the engine is started (cranking is performed).<br><h3>Q.
+            Is the check result normal?<br></h3><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn001.png">Intermittent malfunction is suspected (Refer to GROUP 00 &#0045; How to Use Troubleshooting&#0047;Inspection Service Points &#0045; How to Cope with Intermittent Malfunction <a href="javascript:JumpPage('M100101390056900ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><br><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn002.png">Replace the KOS&#0038;OSS-ECU and register the chassis number (Refer to <a href="javascript:JumpPage('M142960590063400ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>).<br><br><center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/42/html/M142963140012400ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:02:47 GMT -->
+</html>

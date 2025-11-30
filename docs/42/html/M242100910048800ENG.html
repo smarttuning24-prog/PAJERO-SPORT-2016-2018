@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/42/html/M242100910048800ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<SCRIPT SRC='http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/script/w000000000_m00.js'></SCRIPT>
+<LINK rel="stylesheet" href="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/css/03_m0000.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>DOOR ENTRY FUNCTION</title>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body class=fontmain onLoad="SetCharset()">
+
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=light&amp;autoMode=false" type="text/javascript"></script>
+<br />
+
+<h1>DOOR ENTRY FUNCTION</h1><br><hr width="90%"><a name=""></a><h2>DESCRIPTION OF CONSTRUCTION AND OPERATION</h2><br><a name=""></a><hr width="70%"><b></b><br><a href="javascript:enlarge('http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/42/ACF01752AB00ENG.png')"><img width="505" src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/img/42/ACF01752AB00ENG.png"></a><br>When a driver carrying a keyless operation key presses the lock&#0047;unlock switch in the front door out side handle (driver&#8217;s side, front passenger&#8217;s side) or the lock/open switch of tailgate lock release handle, the KOS&#0038;OSS-ECU communicates with the keyless operation key to authorise the keyless operation key. When the KOS&#0038;OSS-ECU authorises the registered keyless operation key within 70 cm in radius out of the vehicle, it requests the ETACS-ECU to lock&#0047;unlock the doors. Note that the key may not be authorised even if it is within this range, when it is positioned too high or too low.<br><a name=""></a><hr width="70%">
+<h3>LOCKING OPERATION OF DOOR ENTRY FUNCTION</h3><br>When the lock&#0047;unlock switch in the front door outside handle (driver&#8217;s side, front passenger&#8217;s side) or the lock switch of tailgate lock release handle is turned ON, the KOS&#0038;OSS-ECU communicates with the keyless operation key to authorise it. When the KOS&#0038;OSS-ECU can authorise the registered keyless operation key only outside the vehicle only, it requests the ETACS-ECU to lock all the doors (including tailgate). At this time, the outside door mirrors are also folded.<br><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff"><b></b><br><ul>
+<li>If any keyless operation key is located inside the vehicle, the KOS&#0038;OSS-ECU does not request the ETACS-ECU to lock all the doors.<br></li>
+<li>When a keyless operation key with discharged battery is inserted in the key slot, the ECU cannot detect the key.<br></li>
+</ul>
+</td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>LOCKING OPERATION INHIBITION CONDITIONS</h3><br>In the following cases, the door locking operation is inhibited.<br><b></b><br><ul>
+<li>Any door is open (door switch is ON). (including door ajar)<br></li>
+<li>Either of the exterior&#0047;interior transmitter antenna assembly is being detected to be open, or it is actually open.<br></li>
+<li>The wiring of exterior&#0047;interior transmitter antenna assembly is contacting against the power supply line.<br></li>
+<li>The engine switch is other than OFF.<br></li>
+<li>The lock and unlock signals are input at the same time. (When the tailgate is operated)<br></li>
+<li>During the unlocking operation inhibition time (When the tailgate is operated)<br></li>
+<li>The door entry function is prohibited by the customisation function.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>UNLOCKING OPERATION OF DOOR ENTRY FUNCTION</h3><br>When the lock&#0047;unlock switch in the front door outside handle (driver&#8217;s side, front passenger&#8217;s side) or the tailgate open switch of tailgate lock release handle is turned ON, the KOS&#0038;OSS-ECU communicates with the keyless operation key to authorise it. When the KOS&#0038;OSS-ECU can authorise the registered keyless operation key only outside the vehicle, it requests the ETACS-ECU to unlock all the doors (if any registered keyless operation key is authorised outside the vehicle, the KOS&#0038;OSS-ECU requests the ETACS-ECU to unlock all the doors even when other registered keyless operation keys are located inside the vehicle). At this time, the outside door mirrors are also unfolded.<br><a name=""></a><hr width="70%">
+<h3>UNLOCKING OPERATION INHIBITION TIME (WHEN THE TAILGATE IS OPERATED)</h3><br>Considering that the customer operates the tailgate open switch of tailgate lock release handle to make sure the doors are locked, the unlocking operation is prohibited for 3 seconds after the locking operation is performed by the lock switch of tailgate lock release handle. Using the customisation function, the unlock prohibition time can be changed.<br><a name=""></a><hr width="70%">
+<h3>UNLOCKING OPERATION INHIBITION CONDITIONS</h3><br>In the following cases, the unlocking operation is prohibited.<br><b></b><br><ul>
+<li>Any door is open (door switch is ON). (including door ajar)<br></li>
+<li>Inside lock knob position of driver&#8217;s side is set to Unlock.<br></li>
+<li>The engine switch is other than OFF.<br></li>
+<li>The exterior&#0047;interior transmitter antenna assembly is being detected to be open, or it is open.<br></li>
+<li>The wiring of exterior&#0047;interior transmitter antenna assembly is contacting against the power supply line.<br></li>
+<li>The door entry function is prohibited by the customisation function.<br></li>
+</ul><a name=""></a><hr width="70%">
+<h3>ANSWERBACK FUNCTIONS</h3><br>When KOS&#0038;OSS-ECU sends a signal to ETACS-ECU, ETACS-ECU outputs the lock&#0047;unlock signal and activates the hazard warning lamp and the outer buzzer to notify the driver the doors are locked&#0047;unlocked. Using a customisation function&#0042;, how the outer buzzer sound can be changed. (Refer to <a href="javascript:JumpPage('M242100030063400ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.)<br><table class="fontattn" border="1" width="100%">
+<tr>
+<td bgcolor="#aaaaff" width="60"><b>note</b></td>
+<td bgcolor="#aaaaff">The outer buzzer for the warnings and alarms is fixed as "Buzzer sounds" regardless of the customisation.<br></td>
+</tr>
+</table>
+<table class="fonttbl" border="1" width="100%">
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN"><b><br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Lock signal received<br></b></td>
+<td valign="top" colspan="NaN" rowspan="NaN"><b>Unlock signal received<br></b></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">ETACS-ECU<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Lock signal output<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Unlock signal output<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Hazard warning lamp<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flashes once (initial setting)<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Flashes twice (initial setting)<br></td>
+</tr>
+<tr>
+<td valign="top" colspan="NaN" rowspan="NaN">Outer buzzer<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Sounds once (initial setting) or none<br></td>
+<td valign="top" colspan="NaN" rowspan="NaN">Sounds twice (initial setting) or none<br></td>
+</tr>
+</table><a name=""></a><hr width="70%">
+<h3>KOS TIMER LOCK FUNCTION</h3><br>When none of the doors are opened within 30 seconds after the doors are unlocked by KOS, ETACS-ECU automatically outputs the door lock signal to lock the doors. This function prevents the doors from being unlocked accidentally. Using a customisation function, the timer lock period can be changed. (Refer to <a href="javascript:JumpPage('M242100030063400ENG.html')"><img src="http://mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/buttons/03btn007.png"></a>.)<br><center>
+<br /><br />
+<hr />
+<!-- Yandex.RTB R-A-188799-2 -->
+<div id="yandex_rtb_R-A-188799-2"></div>
+<script>
+window.yaContextCb.push(()=>{
+	Ya.Context.AdvManager.render({
+		"blockId": "R-A-188799-2",
+		"renderTo": "yandex_rtb_R-A-188799-2"
+	})
+})
+</script>
+<!-- /Yandex.RTB R-A-188799-2 -->
+<br /><br />
+<!-- COUNTERS -->
+<!-- GoogleAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49995677-1', 'mmc-manuals.ru');
+	ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<!-- /GoogleAnalytics -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24611858&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/24611858/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Yandex.Metrika" title="Yandex.Metrika" class="ym-advanced-informer" data-cid="24611858" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24611858, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24611858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t16.2;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: hits for 24"+
+" hours, guests for 24 hours and for today' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- //COUNTERS -->
+<br />
+<img src="http://mmc-manuals.ru/favicon.ico" align="middle"/> <a href="http://mmc-manuals.ru/" target="_top">MMC-Manuals.ru</a>
+</center>
+</body>
+
+<!-- Mirrored from mmc-manuals.ru/manuals/pajero_sport_iii/online/Service_Manual/2018/42/html/M242100910048800ENG.HTM by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Oct 2025 06:04:51 GMT -->
+</html>
